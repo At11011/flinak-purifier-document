@@ -1,0 +1,37 @@
+\section{Summary}
+
+This document outlines the design, construction, and operation of the
+Texas A\&M FLiNaK purifier. This purifier utilizes
+hydrofluorination to reduce metallic impurites, precipitate them, and filter
+them out, while converting oxygen and similar non-metallic contaminants to
+gaseous form and sparging them out of the molten salt. This process results in
+very high purity salt that can be used for corrosion, characterization, and
+other experiments. \par
+
+Included in this document is an introductory overview of the system, where the
+operating principles and concepts are explained. It also goes over previous
+efforts to purify flouride salts and how those efforts succeeded, as well as
+how they failed. Following that, there is a section on the detailed design and
+construction of the purifier. The design decisions behind the construction, as
+well as how the purifier is manufactured is covered. This includes
+drawings for custom-fabricated parts, as well as tubing, valves, electronics,
+etc used to control gas flow and transfer purified salt from the purifier. \par
+
+In addition to the operating prinicples and design, there is also a section
+detailing the programming used to control the purifier. Much of the control
+system is made using LabView, in combination with a LabView Digital to Analog
+converter (DAC), which enables the control and monitoring of the system.
+The program reads parameters such as pressure, temperature, and HF
+concentration, and will raise alarms, or at worst, stop all gas flow if
+any unusual operating parameters are detected. \par
+
+Finally, a section is dedicated to the safe and correct operating procedure for
+the system. It includes a Failure Mode and Effects Analysis (FMEA) which
+addresses potential failures that may occur during operation, and what actions
+or engineering barriers exists to mitigate or eliminate risks of each potential
+failure. An appendix then contains supplementary materials that is referred
+to throughout the document. \par
+
+\pagebreak
+
+\tableofcontents
