@@ -16,7 +16,308 @@
 
 \input{./src/operation/operation.tex}
 
+Failure report:
+
+\begin{enumerate}
+  \item The FLiNaK purifier successfully ran twice with hydrogen sparging.
+    The \ch{HF} flow controller was unknowingly not functioning during the
+    runs.
+  \item Following two successful runs, another run was attempted with \ch{HF}
+    running. However, a blowtorch was needed to encourage salt flow
+    during salt transfer.
+  \item The \ch{HF} flow controller was disposed of, and liquid HF
+    buildup inside the
+    feed line was dunked into a \SI{14}{M}
+    % TODO: Confirm 14 M, get original controller model and manufacturer.
+    \ch{KOH} solution.
+  \item An Aalborg controller was used to regulate \ch{HF} flow. The
+    flow was then controlled using LabView. Flow was confirmed by sending
+    \ch{HF} into the bubbler. The buildup of liquid HF was controlled by
+    occasionally closing the HF regulator.
+  \item Purification ran successfully, but the salt clogged in the
+    line when attempting to transfer
+    due to inadequate heating.
+  \item Attempting to transfer, the large Ni filter was clogged, and the entire
+    transfer line had to be replaced.
+    % TODO: Confirm the order of events here.
+    % TODO: Include an image of the original filter.
+  \item The in-line filter was replaced with a smaller filter from Swagelok.
+    % TODO: Ask Kyle what the pore size of the SL filter was.
+    % TODO: Include an image of the Swagelok filter
+  \item The purifier was run once again, and the transfer was once
+    again attempted.
+    However, the heating tape used to heat the transfer line was
+    inadequately heated and the tape failed and shorted. This happened during
+    several attempts.
+  \item Exhaust pipe fiber glass insulating wrap was placed around the transfer
+    line under the heating
+    tape to attempt to avoid electrical shorting. This worked poorly,
+    as the tape
+    once again failed. Insulating the heat tape resulted in excess
+    heat buildup and
+    failure.
+  \item The tape was again applied directly to the transfer line,
+    followed by fiber glass tape,
+    and finally with Kaowool.
+  \item The tape was carefully wrapped tightly around the transfer
+    line, and a system
+    using 5 thermocouples was used to monitor the temperature of the
+    transfer line.
+  \item This system revealed that the line was not evenly heated, and
+    several points along the
+    transfer line got significantly hotter than other points.
+  \item A Briskheat controller was used previously to control the
+    temperature of the heat tape. This was replaced
+    with a Variac to avoid the overshoot of the on-off behavior of the
+    Briskheat heat tape controllers.
+  \item Multiple heating tapes (controlled with Variacs) were used to
+    attempt zone-heating.
+    This was partially successful, but salt got stuck at the entrance
+    of the transfer tank.
+  \item A large thermal mass of stainless steel at the entrance of
+    the transfer tank (which is
+    1" thick) caused salt to freeze.
+  \item The final run used a previously frozen transfer line. After a
+    previous run, some bulging was noted on the transfer line near
+    the reaction chamber. However, this was disregarded. In addition,
+    material for a new transfer line was not available, so the existing
+    line was used.\footnote{During these failed attempts, the salt
+      was left inside the reaction
+      chamber, and likely exposed to air throughout. Often, several
+      months went by without any purging or argon cover gas being introduced.
+    As a result, the salt was likely contaminated.}
+  \item While heating the transfer line overnight to attempt to melt
+    the salt contained inside, the transfer line ruptured at the
+    buldging point. This resulted
+    in FLiNaK mixing with the insulation, shorting the heating tape,
+    and ending the
+    attempt. Immediate cleanup was then undertaken by Kyle Williams
+    and Adrian Silva.
+  \item Following the failure, Kyle Williams left Texas A\&M to take
+    a job at Kairos. The project was taken over by Nathaniel Thomas.
+  \item Note also that the Ni needle valves would tend to clog with salt, due
+    to the high thermal mass.
+\end{enumerate}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth,
+  angle=270]{./assets/pictures/chamber failure.jpeg}
+  \caption{The reaction chamber following the transfer line rupture.}
+  \label{fig: ruptured transfer line}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth]{assets/pictures/transfer lid clog.jpg}
+  \caption{Image of salt transfer lid with a salt clog. (3-17-2025)}
+  \label{fig: transfer lid clog}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth]{assets/pictures/needle valve
+  clog front.jpg}
+  \caption{Image of a clogged Ni needle valve. FLiNaK is visible surrounding the
+    center, with a small hole in the center. This shows that FLiNaK
+    was freezing at the walls, with only
+  a small quantity able to move through the center. (3-17-2025)}
+  \label{fig: clogged needle valve front}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth]{assets/pictures/needle valve
+  clog back.jpg}
+  \caption{Back of the clogged needle valve. This shows that FLiNaK
+    went through the
+  valve, but clogged before making its way all the way through. (3-17-2025)}
+  \label{fig: clogged needle valve back}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth]{assets/pictures/total needle valve
+  clog.jpg}
+  \caption{A fully clogged needle valve, showing that salt slow was
+  entirely stopped by this point. (3-17-2025)}
+  \label{fig: fully clogged needle valve}
+\end{figure}
+
+% TODO: Find a failure
+% \begin{figure}[H]
+%   \centering
+%   \includegraphics[width=0.6\textwidth]{assets/pictures/heat tape failure.jpg}
+%   \caption{A failure in the heat tape. Lack of contact near the
+%     needle valve resulted in
+%     shorting that caused the heat tape to fail. Note the molten glass near the
+%   failure point. (8-18-2025)}
+%   \label{fig: heat tape failure}
+% \end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth]{assets/pictures/tape wrapping
+  near reaction chamber.jpg}
+  \caption{The wrapping of the heat tape near the reaction chamber.
+    To encourage contact,
+    fiber glass tape was applied with a 316L stainless steel zip tie to hold
+  down the heat tape along with the fiber glass tape. (8-18-2025)}
+  \label{fig: tape wrapping near reaction chamber}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth]{assets/pictures/increased
+  wrapping density.jpg}
+  \caption{Image of increased heat tape wrapping density (less
+    spacing between wraps) to encourage
+    greater heat transfer. This aims to minimize cold spots in the
+    valve that causes clogs. Also note the thermocoulpe placed to
+  measure the temperature of the valve. (8-18-2025)}
+  \label{fig: increased wrapping density}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth]{assets/pictures/filter wrap.jpg}
+  \caption{Heating tape wrapped around the in-line salt filter. Note
+    the thermocouple
+    used to measure the filter temperature. This is another potential
+  clog point. (8-18-2025)}
+  \label{fig: filter wrap}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth]{assets/pictures/transfer tank
+  valve wrap.jpg}
+  \caption{Wrapping of heat tape at the needle valves near the
+    transfer tank. Note thermocouples measuring the temperature of both
+  valves. (8-18-2025)}
+  \label{fig: transfer tank valve wrap}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth]{assets/pictures/transfer tank
+  lid wrap.jpg}
+  \caption{Transfer tank lid. Note the excess heat tape and
+    thermocouple. The excess tape was used to attempt to heat the
+  area near the salt entry point to minize freezing potential. (8-18-2025)}
+  \label{fig: transfer tank lid wrap}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth]{assets/pictures/fully wrapped
+  system.jpg}
+  \caption{Fully insulated system with Kaowool and fiber glass tape
+  to trap heat from heat tape. Note the three needle valves. (8-18-2025)}
+  \label{fig: fully wrapped system}
+\end{figure}
+
+% TODO: These are scratch notes, incorperate these into the document when ready.
+Notes on initial cleanup efforts of the FLiNaK purifier. This is
+following a containment breach
+which resulted in the destruction of the gas bubbler line, as well as
+the salt transfer line.
+\begin{enumerate}
+  \item The reaction chamber and transfer tank were scrubbed with
+    water to remove residual FLiNaK and make the system safe for transport
+    out of the Houston building where the system operates. Appropriate PPE was
+    worn (nitrile gloves, and HF respirator)
+  \item The system was transported to the NEEB and disassembled. A
+    fractured portion of the salt
+    transfer line was cut off of the transfer tank using a reciprocating saw.
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.6\textwidth]{./assets/pictures/damaged
+      transfer tank line removed.jpg}
+      \caption{The transfer tank with the central salt transfer line cut off.}
+      \label{fig: transfer tank damaged line removed}
+    \end{figure}
+
+  \item It was noted that the salt dip tubes showed significant
+    corrosion. It also appears that salt
+    caused Ni to dissolve and redeposited onto the dip tubes,
+    resulting in crystalline-like growth on
+    the salt tubes. It shold be noted that these tubes were exposed
+    to hundreds of hours of
+    FLiNaK exposure, many of those hours in the presence of \ch{HF},
+    \ch{H2}, and \ch{Ar} gas.
+  \item
+
+  \item The reaction chamber and transfer tank were sand-blasted with
+    aluminum oxide sandblasting medium at 120 psi to expose fresh surfaces
+    and remove remaining salt.
+    % TODO: Do this. \item The sandblasting media was then marked as
+    % "FLiNaK contaminated" and
+    %     appropriate disposal will be done through EHS.
+\end{enumerate}
+\pagebreak
+
+Notes on cleaning and assembly of transfer tank:
+\begin{enumerate}
+  \item Cleaned the components of the reactor chamber and the
+    transfer tank. Water + soap, then acetone + wipe with shop towel,
+    then ethanol + kimwipe, then isopropyl. Repeat until a kimwipe
+    comes out clean.
+  \item Note that the Ni liner was quite dirty, likely due to residue
+    from the welding process.
+  \item Reassmebled transfer tank with SL (Swagelok) Ball valves
+    (part number needed)
+    for vacuum and purge, then a high temp needle valve in the center
+    made of SS (not ideal, just what was available). Added a fresh
+    copper gasket,
+    and used anti-seize on Swagelok joints. Also note that the center
+    pipe (along with the rest of the transfer tank) is all made of 316L.
+    Note also that the inside of the tank is dirty from previous use
+    (some rust, iron oxide, etc.) May affect purity of the final product.
+  \item Pulled vacuum on the transfer tank, came down to 20 mTorr. No
+    leaks found.
+  \item Also note that a dremel was used to cut off a galled portion
+    of one of the
+    side tubes. Galling was caused by attempting to install a sand-blasted SL
+    fitting, and immediate galling occured before any attempt to tighten.
+    Avoid cleaning and reusing sand-blasted SL parts.
+  \item Note that new Ni liner came from Continental (include certificates)
+\end{enumerate}
+
+Notes on assembly of the reaction chamber:
+\begin{enumerate}
+  \item Inserted clean Ni liner into the reaction chamber.
+  \item Note that one SL ferral and nut that was dremeled off due to
+    excessive damage.
+    This process is not easy, and must be done with great care to
+    avoid cutting the pipe.
+
+    \pagebreak
+  \item A new ferrule and nut was installed to replace the old ones.
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.6\textwidth]{./assets/pictures/ni round.jpg}
+      \caption{Ni round received from Continental}
+      \label{fig: liner ni round stock}
+    \end{figure}
+\end{enumerate}
+\pagebreak
+
+Notes on the construction of the Ni liner and welding:
+\begin{enumerate}
+  \item It was found that the original material purchased for the Ni liner was
+    larger than needed. The liner was constructed to be 12" tall and
+    an outer diameter of 5.5". % TODO: Note that the excess was
+    % recovered, after picking up the material.
+  \item A Ni-201 (not confirmed) 1/2" pipe was provided to Brazos
+    Industries. They naturally struggled to weld the material.
+    A 316L stainless steel tube was provided instead. The weld was
+    then quickly completed.
+\end{enumerate}
+
 % \printbibliography
 
+\pagebreak
 \input{./src/appendix/appendix.tex}
 \end{document}
