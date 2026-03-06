@@ -1042,6 +1042,215 @@ Notes on the construction of the Ni liner and welding:
     then quickly completed.
 \end{enumerate}
 
+\subsection{Wiring notes}
+
+\begin{enumerate}
+  \item The flow controllers were rewired to reduce the 15-pin connectors coming
+    from the Aalborg connectors to 9-pin connectors before being
+    wired into the NI
+    DAC. Refer to \Cref{fig: DB15 to DB9 connector diagram} and
+    \Cref{tab: flow controller wiring}.
+  \item The power supply for the flow controllers were consolidated
+    into a single 24V, 2A
+    power supply. In addition, the power for the HF sensor was also
+    supplied from the same
+    power supply.
+  \item Each flow controller draws \SI{650}{\milli\ampere} at
+    \SI{24}{\volt}. The HF sensor draws a
+    maximum of \SI{1.4}{\watt}. At \SI{24}{\volt}, this becomes a
+    draw of $\SI{1.4}{\watt} / \SI{24}{\volt}  = \SI{0.058}{\milli\ampere}$.
+\end{enumerate}
+
+\begin{figure}[H]
+  \centering
+
+  \begin{circuitikz}
+    \node[draw, minimum width=1.5cm, minimum height=4.5cm] (A) {DB9};
+    % Right DB9 connector
+    \node[draw, minimum width=1.5cm, minimum height=7.5cm, right=6cm
+    of A] (B) {DB15};
+
+    % Left connector pins
+    \foreach \i [evaluate=\i as \y using {2 - 0.5*(\i-1)}] in {1,...,9}
+    {
+      \node[circle, draw, inner sep=1pt] (L\i) at (1.5,\y) {};
+      \node[left] at (L\i) {\i};
+    }
+    \node[circle, draw, inner sep=1pt] (LGND) at (0,-3) {};
+    \node[above] at (LGND) {GND};
+
+    % Right connector pins
+    \foreach \i [evaluate=\i as \y using {3.5 - 0.5*(\i-1)}] in {1,...,15}
+    {
+      \node[circle, draw, inner sep=1pt] (R\i) at (6,\y) {};
+      \node[right] at (R\i) {\i};
+    }
+    \node[circle, draw, inner sep=1pt] (RGND) at (7.5,-4.5) {};
+    \node[above] at (RGND) {GND};
+
+    \newcommand{\pinconnect}[3]{%
+      % #1 = DB9 pin, #2 = DB15 pin, #3 = color
+      \draw[#3, thick] (L#1) -- (R#2);
+    }
+
+    \pinconnect{1}{1}{orange}
+    \pinconnect{2}{2}{yellow}
+    \pinconnect{3}{4}{green}
+    \pinconnect{4}{8}{blue}
+    \pinconnect{5}{7}{red}
+    \pinconnect{6}{10}{violet}
+    \pinconnect{7}{11}{darkgray}
+    \pinconnect{8}{12}{lightgray}
+    \pinconnect{9}{5}{black}
+    \draw[brown, thick] (LGND) -| (L9);
+    \draw[brown, thick] (RGND) -| (R15);
+    \draw[brown, thick] (R15.west) -- ++(-1,0) |- (R5.west);
+    \draw[brown, thick] (R3.west) -- ++(-1,0) |- (R5.west);
+
+  \end{circuitikz}
+
+  \caption{A wiring diagram showing the DB15 to DB9 wiring connections for the
+    gas flow controllers used in the system. Grounding wires are
+    shown in brown, and
+  ground is tied to the negative pole of the 24V power supply.}
+  \label{fig: DB15 to DB9 connector diagram}
+\end{figure}
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{llll}
+    DB9 pin number & DB15 pin number & Wire color & Purpose \\
+    \hline
+    1 & 1 & \color{orange}orange & 0 to 5 Vdc flow signal common \\
+    2 & 2 & \color{yellow}yellow & 0 to 5 Vdc flow signal output \\
+    3 & 4 & \color{green}green & Open (Purge) \\
+    4 & 8 & \color{blue}blue & Remote setpoint input \\
+    5 & 7 & \color{red}red & +24 Vdc power supply \\
+    6 & 10 & \color{violet}purple & Remote setpoint common \\
+    7 & 11 & \color{darkgray}gray & +5 Vdc reference output for
+    remote setpoint \\
+    8 & 12 & \color{lightgray}white & Valve off control \\
+    9 & 5 & \color{black}black & Common, power supply \\
+    \hline
+    GND & 3 & \color{brown}brown & Common \\
+    - & 6 & \color{black}none & (unassigned) \\
+    - & 9 & \color{black}none & 4-20 mA (-) flow signal return \\
+    - & 13 & \color{black}none & Auxiliary +24 Vdc \\
+    - & 14 & \color{black}none & 4-20 mA (+) flow signal output \\
+    - & 15 & \color{black}none & Chassis ground \\
+    \hline
+  \end{tabular}
+  \caption{Table of wiring for DB15 to DB9 connectors for Aalborg
+  GFC17 mass flow controllers. Refer to \Cref{sec:aalborg pinout} for details.}
+  \label{tab: flow controller wiring}
+\end{table}
+
+\section{Instrument Notes}
+
+\subsection{Honeywell Satellite XT (HF Detector)}
+
+The Honeywell Satellite XT is used to monitor the concentration of HF
+inside of the fumehood of the purifier. The concentration of HF inside of the
+fumehood is monitored during purifier operation.
+
+% TODO: Implement this
+% If the concentration increases above zero, the LabView software
+% automatically sends
+% a notification to (512)-952-1017 (Nathaniel Thomas's personal phone
+% number). It
+% also sends an email to nathaniel@tamu.edu.
+
+% If the concentration of HF reaches the TLV (3 ppm from
+% https://www.cdc.gov/niosh/idlh/7664393.html),
+% then the LabView program calls Nathaniel Thomas at (512)-952-1017
+% and ceases HF flow, pausing the
+% purification. It also sends an email to nathaniel@tamu.edu.
+
+% If the concentration of HF reaches double the TVL (6 ppm), the LabView
+% program calls Nathaniel Thomas at (512)-952-1017 and shuts down all gas flow
+% except argon, and shuts off all heating. It also sends an email to
+% nathaniel@tamu.edu.
+
+% If the concentration of HF reaches IDLH (30 ppm), the LabView program shuts
+% down all gas flow and heating. It then calls 911 and notifies the 911 operator
+% of the location, condition, and emergency. Then it notifies EHS's
+% emergency line at 979-845-4311. It then calls Nathaniel Thomas at
+% (512)-952-1017 and notifies of the situation. It also sends an
+% email to nathaniel@tamu.edu
+
+\subsection{SRS RGA100}
+
+The SRS RGA100 monitors the composition of the scrubber gas. This can
+be used to monitor the progress of the purification by detecting the
+quantity of hydrogen,
+oxygen, water, \ch{HF}, and other product gases from the purification. \par
+
+Note that the manual does not permit operation in corrosive gas environments,
+which is exactly how it is being used here. \par
+% TODO: Consult SRS on this use case.
+
+Also note, there is the possibility of cross-talk with a hot ion
+gauge, which is also used very close to the detector. The manual
+states that this interference can be minimized with appropriate shielding.
+% TODO: Confirm that the ion gauge can (or cannot) be operated in the vicinity
+% of the ion gauge.
+
+\subsection{USB-6353}
+
+The DAC (Digital-to-analog converter) used to communicate with
+process control equipment
+used in the purifier.
+
+\section{Maintenance Schedule}
+
+Several pieces of equipment in the FLiNaK purifier require regular maintenance.
+This section outlines the regular maintenance that must be performed
+on a regular basis to ensure optimum operation.
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{lllll}
+    \hline
+    Equipment & Maintenance Type & Importance & Occasion & Instructions \\
+    \hline
+    SRS RGA100 & Peak tuning & Moderate & Once per year & Section 7-4  \\
+    &&&& of the SRS \\
+    &&&& RGA manual \\
+    SRS RGA100 & Bakeout & Moderate & Whenever exposed to air & Section 8-5 \\
+    &&&& of the SRS \\
+    &&&& RGA manual \\
+    SRS RGA100 & Ionizer degas (alt.) & Moderate & Whenever exposed to air &
+    Section 8-7 \\
+    &&&& of the SRS \\
+    &&&& RGA manual \\
+    SRS RGA100 & Ionizer replacement & Moderate & When sensitivity &
+    Section 8-8 \\
+    &&& is serevely degraded & of the SRS \\
+    &&&& RGA manual \\
+    SRS RGA100 & Filament replacement & Moderate & When worn out &
+    Section 8-11 \\
+    &&&& of the SRS \\
+    &&&& RGA manual \\
+    SRS RGA100 & CDEM Pre-conditioning & High & On pump-down &
+    Section 8-16 \\
+    &&&& of the SRS \\
+    &&&& RGA manual \\
+    SRS RGA100 & CDEM Refreshment & Moderate & If contaminated &
+    Section 8-17 \\
+    &&&& of the SRS \\
+    &&&& RGA manual \\
+    SRS RGA100 & CDEM Replacement & Moderate & Severe gain degradation&
+    Section 8-18 \\
+    &&&& of the SRS \\
+    &&&& RGA manual \\
+    SRS RGA100 & Quadrupole filter cleaning & Moderate & Degraded signal &
+    Section 8-18 \\
+    &&&& of the SRS \\
+    &&&& RGA manual \\
+    \hline
+  \end{tabular}
+\end{table}
+
 % \printbibliography
 
 \pagebreak
