@@ -1,0 +1,140 @@
+% =============================================================================
+% Title:        Maintenance
+% Author:       Nathaniel Thomas
+% Affiliation:  Texas A&M University, Department of Nuclear Engineering
+% Email:        nathaniel@tamu.edu
+% Date Created: 3/7/2026
+% Version:      1.0
+%
+% Description:
+%   A .tex source file describing the required maintenance of the FLiNaK 
+%   purifier.
+%
+% =============================================================================
+
+\section{Maintenance Schedule}
+Several pieces of equipment in the FLiNaK purifier require regular maintenance.
+This section outlines the regular maintenance that must be performed
+on a regular basis to ensure optimum operation.
+
+\subsection{SRS RGA100}
+
+The RGA is a sensitive and complex instrument that requires
+maintenance and care to ensure optimum performance, especially in
+a corrosive environment. Avoid degas unless bakeout is not
+feasible.
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{llll}
+    \hline
+    Maintenance Type & Importance & Occasion & Instructions \\
+    \hline
+    Peak tuning & Moderate & Once per year & Section 7-4  \\
+    &&& of the SRS \\
+    &&& RGA manual \\
+    Bakeout & Moderate & Whenever exposed to air & Section 8-5 \\
+    &&& of the SRS \\
+    &&& RGA manual \\
+    Ionizer degas (alt.) & Moderate & Whenever exposed to air &
+    Section 8-7 \\
+    &&& of the SRS \\
+    &&& RGA manual \\
+    Ionizer replacement & Moderate & When sensitivity & Section 8-8 \\
+    && is serevely degraded & of the SRS \\
+    &&& RGA manual \\
+    Filament replacement & Moderate & When worn out &
+    Section 8-11 \\
+    &&& of the SRS \\
+    &&& RGA manual \\
+    CDEM Pre-conditioning & High & On pump-down &
+    Section 8-16 \\
+    &&& of the SRS \\
+    &&& RGA manual \\
+    CDEM Refreshment & Moderate & If contaminated &
+    Section 8-17 \\
+    &&& of the SRS \\
+    &&& RGA manual \\
+    CDEM Replacement & Moderate & Severe gain degradation&
+    Section 8-18 \\
+    &&& of the SRS \\
+    &&& RGA manual \\
+    Quadrupole filter cleaning & Moderate & Degraded signal &
+    Section 8-18 \\
+    &&& of the SRS \\
+    &&& RGA manual \\
+    \hline
+  \end{tabular}
+\end{table}
+
+\pagebreak
+
+\subsection{GFC17 Flow Controller}
+
+The GFC17 Flow Controllers are used to control the flow of
+\ch{H2}, \ch{Ar}, and \ch{HF}. They do not require significant maintenance,
+aside from periodic filter cleaning.
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{llll}
+    \hline
+    Maintenance Type & Importance & Occasion & Instructions \\
+    \hline
+    Filter cleaning & High & When flow is restricted & Section 6.2.1  \\
+    &&& of the Aalborg \\
+    &&& GFC manual \\
+    O-ring cleaning & Moderate & Periodic & Section 6.2.2  \\
+    &&& of the Aalborg \\
+    &&& GFC manual \\
+    Calibration & Moderate & When disassembled & Section 7  \\
+    &&& of the Aalborg \\
+    &&& GFC manual \\
+    \hline
+  \end{tabular}
+\end{table}
+
+\pagebreak
+
+\subsection{KJL 354 Ion Gauge}
+
+This hot cathode ionization gauge from Kurt J. Lesker is used to
+measure the vacuum level for the copper leak valve. Avoid degas
+unless bakeout is not feasible.
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{llll}
+    \hline
+    Maintenance Type & Importance & Occasion & Instructions \\
+    \hline
+    Bakeout & Moderate & When exposed to air & Page 14  \\
+    &&& of the KJL \\
+    &&& 354 manual \\
+    Degas (alt.) & Moderate & When exposed to air & Page 14  \\
+    &&& of the KJL \\
+    &&& 354 manual \\
+    \hline
+  \end{tabular}
+\end{table}
+
+\subsection{NI USB-6353}
+
+The National Instruments USB-6353 DAC (Digital-to-analog converter)
+used to communicate with
+process control equipment used in the purifier. It requires
+auto-calibration every two years, or when the ambient temperature
+changes.
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{llll}
+    \hline
+    Maintenance Type & Importance & Occasion & Instructions \\
+    \hline
+    Self-calibration & Moderate & Temperature change or & Section 1-4  \\
+    &&Every two years& of the NI \\
+    &&& DAQ X Series Manual \\
+    \hline
+  \end{tabular}
+\end{table}

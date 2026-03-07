@@ -1,0 +1,71 @@
+% =============================================================================
+% Title:        Instrument notes
+% Author:       Nathaniel Thomas
+% Affiliation:  Texas A&M University, Department of Nuclear Engineering
+% Email:        nathaniel@tamu.edu
+% Date Created: 3/7/2026
+% Version:      1.0
+%
+% Description:
+%   A .tex source file describing the instruments used in the FLiNaK purifier
+%   and some important operating details.
+%
+% =============================================================================
+
+\section{Instrument Notes}
+
+\subsection{Honeywell Satellite XT (HF Detector)}
+
+The Honeywell Satellite XT is used to monitor the concentration of HF
+inside of the fumehood of the purifier. The concentration of HF inside of the
+fumehood is monitored during purifier operation.
+
+% TODO: Implement this
+% If the concentration increases above zero, the LabView software
+% automatically sends
+% a notification to (512)-952-1017 (Nathaniel Thomas's personal phone
+% number). It
+% also sends an email to nathaniel@tamu.edu.
+
+% If the concentration of HF reaches the TLV (3 ppm from
+% https://www.cdc.gov/niosh/idlh/7664393.html),
+% then the LabView program calls Nathaniel Thomas at (512)-952-1017
+% and ceases HF flow, pausing the
+% purification. It also sends an email to nathaniel@tamu.edu.
+
+% If the concentration of HF reaches double the TVL (6 ppm), the LabView
+% program calls Nathaniel Thomas at (512)-952-1017 and shuts down all gas flow
+% except argon, and shuts off all heating. It also sends an email to
+% nathaniel@tamu.edu.
+
+% If the concentration of HF reaches IDLH (30 ppm), the LabView program shuts
+% down all gas flow and heating. It then calls 911 and notifies the 911 operator
+% of the location, condition, and emergency. Then it notifies EHS's
+% emergency line at 979-845-4311. It then calls Nathaniel Thomas at
+% (512)-952-1017 and notifies of the situation. It also sends an
+% email to nathaniel@tamu.edu
+
+\subsection{SRS RGA100}
+
+The SRS RGA100 monitors the composition of the scrubber gas. This can
+be used to monitor the progress of the purification by detecting the
+quantity of hydrogen,
+oxygen, water, \ch{HF}, and other product gases from the purification. \par
+
+Note that the manual does not permit operation in corrosive gas environments,
+which is exactly how it is being used here. \par
+% TODO: Consult SRS on this use case.
+
+Also note, there is the possibility of cross-talk with a hot ion
+gauge, which is also used very close to the detector. The manual
+states that this interference can be minimized with appropriate shielding.
+% TODO: Confirm that the ion gauge can (or cannot) be operated in the vicinity
+% of the ion gauge.
+
+\subsection{NI USB-6353}
+
+% TODO
+
+% \subsection{}
+
+\pagebreak

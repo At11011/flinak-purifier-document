@@ -1,0 +1,59 @@
+% =============================================================================
+% Title:        Flow Controller DB15 to DB9 Connector Diagram
+% Author:       Nathaniel Thomas
+% Affiliation:  Texas A&M University, Department of Nuclear Engineering
+% Email:        nathaniel@tamu.edu
+% Date Created: 3/7/2026
+% Version:      1.0
+%
+% Description:
+%   A colored wiring diagram of the FLiNaK purifier flow controllers.
+%   This diagram shows the wire connections for the DB15 female to DB9 female
+%   connecting cables used to connect the Aalborg flow controllers to the
+%   NI USB-6353 that controls the purifier.
+%
+% =============================================================================
+
+\begin{circuitikz}
+    \node[draw, minimum width=1.5cm, minimum height=4.5cm] (A) {DB9};
+    % Right DB9 connector
+    \node[draw, minimum width=1.5cm, minimum height=7.5cm, right=6cm
+    of A] (B) {DB15};
+
+    % Left connector pins
+    \foreach \i [evaluate=\i as \y using {2 - 0.5*(\i-1)}] in {1,...,9}
+    {
+      \node[circle, draw, inner sep=1pt] (L\i) at (1.5,\y) {};
+      \node[left] at (L\i) {\i};
+    }
+    \node[circle, draw, inner sep=1pt] (LGND) at (0,-3) {};
+    \node[above] at (LGND) {GND};
+
+    % Right connector pins
+    \foreach \i [evaluate=\i as \y using {3.5 - 0.5*(\i-1)}] in {1,...,15}
+    {
+      \node[circle, draw, inner sep=1pt] (R\i) at (6,\y) {};
+      \node[right] at (R\i) {\i};
+    }
+    \node[circle, draw, inner sep=1pt] (RGND) at (7.5,-4.5) {};
+    \node[above] at (RGND) {GND};
+
+    \newcommand{\pinconnect}[3]{%
+      % #1 = DB9 pin, #2 = DB15 pin, #3 = color
+      \draw[#3, thick] (L#1) -- (R#2);
+    }
+
+    \pinconnect{1}{1}{orange}
+    \pinconnect{2}{2}{yellow}
+    \pinconnect{3}{4}{green}
+    \pinconnect{4}{8}{blue}
+    \pinconnect{5}{7}{red}
+    \pinconnect{6}{10}{violet}
+    \pinconnect{7}{11}{darkgray}
+    \pinconnect{8}{12}{lightgray}
+    \pinconnect{9}{5}{black}
+    \draw[brown, thick] (LGND) -| (L9);
+    \draw[brown, thick] (RGND) -| (R15);
+    \draw[brown, thick] (R15.west) -- ++(-1,0) |- (R5.west);
+    \draw[brown, thick] (R3.west) -- ++(-1,0) |- (R5.west);
+\end{circuitikz}

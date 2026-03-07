@@ -1,5 +1,19 @@
+% =============================================================================
+% Title:        Style header
+% Author:       Nathaniel Thomas
+% Affiliation:  Texas A&M University, Department of Nuclear Engineering
+% Email:        nathaniel@tamu.edu
+% Date Created: 3/7/2026
+% Version:      1.0
+%
+% Description:
+%   A .sty source file for defining the styles and dependencies of the FLiNaK
+%   purifier document.
+%
+% =============================================================================
+
 % Document class and basic setup
-\documentclass[12pt]{exam}
+\documentclass[12pt]{report}
 % \usepackage[utf8]{inputenc}
 % \usepackage[T1]{fontenc}
 
@@ -76,7 +90,7 @@
 % Captions and references
 \usepackage[hypcap=false,font=small,labelfont=bf,tableposition=top]{caption}
 \usepackage{subcaption}
-\usepackage[colorlinks=true, allcolors=black]{hyperref}
+\usepackage[colorlinks=true]{hyperref}
 \usepackage{cleveref}
 \usepackage[style=numeric,backend=biber]{biblatex}
 \addbibresource{src/refs.bib}
