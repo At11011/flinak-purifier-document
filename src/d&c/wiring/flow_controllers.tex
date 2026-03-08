@@ -14,12 +14,13 @@
 
 \section{Flow Controller Wiring}
 
-There are three Aalborg GFC17s used to control the flow of \ch{H2}, \ch{HF}, 
+There are three Aalborg GFC17s used to control the flow of \ch{H2}, \ch{HF},
 and \ch{Ar} in this system. The flow controllers were rewired to reduce the male
 DB15 connectors coming
 from the Aalborg connectors to DB9 connectors before being
-wired into the NI USB-6353. Refer to \Cref{fig: DB15 to DB9 connector diagram} 
-and \Cref{tab: flow controller wiring}. The reduction to a 9-pin connector was 
+wired into the NI USB-6353. Refer to \Cref{fig: DB15 to DB9 connector
+diagram} and \Cref{tab: flow controller wiring}. The reduction to a
+9-pin connector was
 done because a number of connectors on the flow controllers were not used
 in this system, such as the 4-20 mA control signals. \par
 
@@ -33,7 +34,7 @@ in this system, such as the 4-20 mA control signals. \par
     \SI{24}{\volt}. The HF sensor draws a
     maximum of \SI{1.4}{\watt}. At \SI{24}{\volt}, this becomes a
     draw of $\SI{1.4}{\watt} / \SI{24}{\volt}  = \SI{0.058}{\milli\ampere}$.
-    The power supply has a maximum limit of \SI{2}{\ampere}. With three 
+    The power supply has a maximum limit of \SI{2}{\ampere}. With three
     flow controllers and the HF sensor, the total draw from the power supply
     is \SI{1950.06}{\milli\ampere}.
 \end{enumerate}
@@ -43,8 +44,8 @@ in this system, such as the 4-20 mA control signals. \par
   \input{./src/d&c/wiring/flow_controller_d15_d9_diagram.tex}
   \caption{A wiring diagram showing the DB15 to DB9 wiring connections for the
     gas flow controllers used in the system. Grounding wires are
-    shown in brown, and ground is tied to the negative pole of the 
-    24V power supply.}
+    shown in brown, and ground is tied to the negative pole of the
+  24V power supply.}
   \label{fig: DB15 to DB9 connector diagram}
 \end{figure}
 
@@ -82,14 +83,16 @@ Refer to \Cref{fig: gfc db15} for an image of the wired 15-pin connector.
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.6\textwidth]{./assets/pictures/gfc db15.jpg}
-  \caption{Image of the wired DB15 connector for the Aalborg GFC17 flow controllers.}
+  \includegraphics[width=0.3\textwidth]{./assets/pictures/gfc db15.jpg}
+  \caption{Image of the wired DB15 connector for the Aalborg GFC17
+  flow controllers.}
   \label{fig: gfc db15}
 \end{figure}
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.6\textwidth]{./assets/pictures/gfc db9.jpg}
-  \caption{Image of the wired DB9 connector for the Aalborg GFC17 flow controllers.}
+  \includegraphics[width=0.3\textwidth]{./assets/pictures/gfc db9.jpg}
+  \caption{Image of the wired DB9 connector for the Aalborg GFC17
+  flow controllers.}
   \label{fig: gfc db9}
 \end{figure}

@@ -14,16 +14,59 @@
 \section{Failure Report}
 \label{sec: failure report}
 
-This section goes over the failure modes of the FLiNaK purifier. While the 
-purifier has worked for a number of runs, it has had a number of failure as 
+This section goes over the failure modes of the FLiNaK purifier. While the
+purifier has worked for a number of runs, it has had a number of failure as
 well. A few failures were due to operator error, while most failures were
 due to inadequate heating during transfers. \par
 
+% TODO: Ask Kyle for pictures and details on why he opened the scrubber line.
+% also get the date.
 An early failure was due to operator error. On [DATE], the purifier was heated
 to operating temperature with salt loaded inside, before being sealed and cooled
 down again. The cooling resulted in the gas inside the reaction chamber
-reducing in pressure. Later on, the 
+reducing in pressure. Later on, the line going to the scrubber line was opened,
+causing the caustic scrubber solution to be sucked into the reaction chamber.
+Approximately \SI{5}{\kilo\gram} of salt was contaminated, and the reaction
+chamber had to be opened for cleanup.
+\par
 
+Later on, the purifier was run successfully, and the salt transfer process
+was partially successful. However, the transfer required some manual heating of
+the uncovered portions of the transfer line, as a result of salt freezing.
+Refer to \Cref{fig: purifier transfer tank} and
+\Cref{fig: purifier reaction chamber} to see the unheated portions of the
+transfer line. Heat was applied using a blowtorch and MAP gas to melt the salt
+and facilitate transfer.
+\par
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.4\textwidth]{./assets/pictures/purifier
+  transfer tank.jpg}
+  \caption{Image of the unheated portion of the transfer line before heating.}
+  \label{fig: purifier transfer tank}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.4\textwidth]{
+    ./assets/pictures/purifier reaction chamber.jpg
+  }
+  \caption{Image of the unheated portion of the reaction chamber line
+  before heating.}
+  \label{fig: purifier reaction chamber}
+\end{figure}
+
+Following purification, samples of the purified salt were removed from the
+transfer tank and processed for ICPMS. The results of the ICPMS indicated
+that most metallic impurities were reduced, but the concentration of
+aluminum was increased. This was attributed to some of the alumina insulation
+falling into the purifier while salt was being loaded. \par
+
+% TODO: Ask Kyle for ICPMS data.
+% TODO: Check the order of events here.
+
+\pagebreak
 
 \begin{enumerate}
   \item The FLiNaK purifier successfully ran twice with hydrogen sparging.

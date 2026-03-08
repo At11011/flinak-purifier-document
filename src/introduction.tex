@@ -14,62 +14,70 @@
 
 \section{Introduction}
 
-The Texas A\&M FLiNaK hydrodlourination purifier is a chemical purification system 
-designed to process FLiNaK salt recieved from commercial vendors, such 
-as Materion \cite{materion} to reduce the concentration of both metallic 
+The Texas A\&M FLiNaK hydrodlourination purifier is a chemical
+purification system
+designed to process FLiNaK salt recieved from commercial vendors, such
+as Materion \cite{materion} to reduce the concentration of both metallic
 and non-metallic impuritied. \par
 
 \subsection{A brief history}
 
 The project began in [INSERT DATE]
 % 2021 % TODO: Confirm this date
-under the supervision of 
-\href{https://ners.engin.umich.edu/people/raiman-stephen/}{Dr. Steven Raiman}, 
+under the supervision of
+\href{https://ners.engin.umich.edu/people/raiman-stephen/}{Dr. Steven Raiman},
 who was a professor at Texas A\&M at the time (\Cref{fig: steven raiman}).  \par
 
-The construction of the system was performed by Kyle Williams 
-(\Cref{fig: kyle williams}), a PhD student under Dr. Raiman with an 
+The construction of the system was performed by Kyle Williams
+(\Cref{fig: kyle williams}), a PhD student under Dr. Raiman with an
 undergradute Chemical Engineering degree
-from the University of Arkansas. In the summer of 2022, Steven Raiman left 
-Texas A\&M, but Kyle Williams stayed behind, joining Dr. Lin Shao's 
-(\Cref{fig: lin shao}) group instead. In the Fall of 2022, a junior undergraduate 
-Chemical Engineering student named Nathaniel Thomas 
-(the author of this document) to aid in the construction and operation of the 
+from the University of Arkansas. In the summer of 2022, Steven Raiman left
+Texas A\&M, but Kyle Williams stayed behind, joining Dr. Lin Shao's
+(\Cref{fig: lin shao}) group instead. In the Fall of 2022, a junior
+undergraduate
+Chemical Engineering student named Nathaniel Thomas
+(the author of this document) to aid in the construction and operation of the
 FLiNaK purifier. \par
 
 Nathaniel Thomas contributed to setting up the HF detection for the FLiNaK
-purifier, and also aided in general maintenance efforts during his time as 
+purifier, and also aided in general maintenance efforts during his time as
 an undergraduate researcher. \par
 
 \begin{figure}
-    \centering
-    \includegraphics[width=0.2\textwidth]{./assets/pictures/steven raiman.jpg}
-    \caption{An image of Dr. Steven Raiman, taken from \href{https://ners.engin.umich.edu/people/raiman-stephen/}{ners.engin.umich.edu}}
-    \label{fig: steven raiman}
+  \centering
+  \includegraphics[width=0.2\textwidth]{./assets/pictures/steven raiman.jpg}
+  \caption{An image of Dr. Steven Raiman, taken from
+  \href{https://ners.engin.umich.edu/people/raiman-stephen/}{ners.engin.umich.edu}}
+  \label{fig: steven raiman}
 \end{figure}
 
 \begin{figure}
-    \centering
-    \includegraphics[width=0.2\textwidth]{./assets/pictures/kyle williams.jpeg}
-    \caption{An image of Kyle Williams, taken from \href{https://www.linkedin.com/in/kyle-williams-443656138/}{linkedin.com}}
-    \label{fig: kyle williams}
+  \centering
+  \includegraphics[width=0.2\textwidth]{./assets/pictures/kyle williams.jpeg}
+  \caption{An image of Kyle Williams, taken from
+  \href{https://www.linkedin.com/in/kyle-williams-443656138/}{linkedin.com}}
+  \label{fig: kyle williams}
 \end{figure}
 
 \begin{figure}
-    \centering
-    \includegraphics[width=0.2\textwidth]{./assets/pictures/lin shao.jpg}
-    \caption{An image of Lin Shao, taken from \href{https://engineering.tamu.edu/nuclear/profiles/shao-lin.html}{engineering.tamu.edu}}
-    \label{fig: lin shao}
+  \centering
+  \includegraphics[width=0.2\textwidth]{./assets/pictures/lin shao.jpg}
+  \caption{An image of Lin Shao, taken from
+  \href{https://engineering.tamu.edu/nuclear/profiles/shao-lin.html}{engineering.tamu.edu}}
+  \label{fig: lin shao}
 \end{figure}
 
 The FLiNaK purifier was run [number of times], with various issues preventing
-full and proper function. One of the first failures was an accidental ingress
-of scrubber solution, contaminating FLiNaK with caustic base solution. 
-Further one, there were problems with inadequate heating during salt transfer 
+full and proper function. While there were several runs that were
+at least partially successful (refer to \Cref{sec: successful runs}),
+there were many failures as well. One of the first failures was an
+accidental ingress
+of scrubber solution, contaminating FLiNaK with caustic base solution.
+Further one, there were problems with inadequate heating during salt transfer
 following purification, resulting in clogs and partial disassembly. Finally,
 a major failure occured, resulting in the splillage of molten FLINaK, and
 which required a complete rebuild of the purifier. The details of the
-failures of the purifier are covered in \Cref{chap: failure report}. \par
+failures of the purifier are covered in \Cref{sec: failure report}. \par
 
 % TODO: Go over this with Kyle to confirm that the history is correct.
 
@@ -104,17 +112,17 @@ chance of exposure. \par
 
 This document is a comprehensive overview of the FLiNaK purifier. It includes
 details of construction, such as materials used, part numbers of components
-and equipment used, as well as the rational behind various design decisions 
-(\Cref{chap: construction}). It also contains details on materials and cost 
-(\Cref{chap: cost}), programming used to control the system 
+and equipment used, as well as the rational behind various design decisions
+(\Cref{chap: construction}). It also contains details on materials and cost
+(\Cref{chap: cost}), programming used to control the system
 (\Cref{chap: programming}), operation instructions (\Cref{chap: operation}),
-operational history (\Cref{chap: operational history}), failure reports 
-(\Cref{chap: failure report}), and important details on the equipment 
+operational history (\Cref{chap: operational history}),
+and important details on the equipment
 used for operation (\Cref{chap: equipment}).
 
 \subsection{Literature review}
 
-% TODO: This section goes over the history of flouride salt purification. 
+% TODO: This section goes over the history of flouride salt purification.
 % go based off of Kyle's lit review.
 
 \pagebreak
