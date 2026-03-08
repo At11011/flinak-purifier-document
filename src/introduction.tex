@@ -1,3 +1,17 @@
+% ============================================================================
+% Title:        Introduction
+% Author:       Nathaniel Thomas
+% Affiliation:  Texas A&M University, Department of Nuclear Engineering
+% Email:        nathaniel@tamu.edu
+% Date Created: 3/7/2026
+% Version:      1.0
+%
+% Description:
+%   A .tex source file describing the rest of the document and providing an
+%   overview of the purifier.
+%
+% =============================================================================
+
 \section{Introduction}
 
 The Texas A\&M FLiNaK hydrodlourination purifier is a chemical purification system 
@@ -48,8 +62,18 @@ an undergraduate researcher. \par
     \label{fig: lin shao}
 \end{figure}
 
+The FLiNaK purifier was run [number of times], with various issues preventing
+full and proper function. One of the first failures was an accidental ingress
+of scrubber solution, contaminating FLiNaK with caustic base solution. 
+Further one, there were problems with inadequate heating during salt transfer 
+following purification, resulting in clogs and partial disassembly. Finally,
+a major failure occured, resulting in the splillage of molten FLINaK, and
+which required a complete rebuild of the purifier. The details of the
+failures of the purifier are covered in \Cref{chap: failure report}. \par
+
 % TODO: Go over this with Kyle to confirm that the history is correct.
 
+% TODO: Elaborate
 \subsection{System description}
 
 The FLiNaK purifier is a hydrofluorination system that removes impurities by
@@ -69,6 +93,28 @@ for further processing. \par
 
 The system is not built inside of an inert atmosphere glovebox, but all
 components of the system are sealed, which minimizes the potential for
-contamination.
+contamination. In addition, the system is built in a fumehood with a
+face velocity of \SI{100}{ft/s} at a sash height of \SI{18}{in},
+ensuring operators are protected from any exposure to hazardous \ch{HF}.
+There is also an HF detector in the fumehood which detects the precense of
+\ch{HF}, which will issue an alarm in the presense of HF, minimizing the
+chance of exposure. \par
+
+\subsection{Document structure}
+
+This document is a comprehensive overview of the FLiNaK purifier. It includes
+details of construction, such as materials used, part numbers of components
+and equipment used, as well as the rational behind various design decisions 
+(\Cref{chap: construction}). It also contains details on materials and cost 
+(\Cref{chap: cost}), programming used to control the system 
+(\Cref{chap: programming}), operation instructions (\Cref{chap: operation}),
+operational history (\Cref{chap: operational history}), failure reports 
+(\Cref{chap: failure report}), and important details on the equipment 
+used for operation (\Cref{chap: equipment}).
+
+\subsection{Literature review}
+
+% TODO: This section goes over the history of flouride salt purification. 
+% go based off of Kyle's lit review.
 
 \pagebreak
