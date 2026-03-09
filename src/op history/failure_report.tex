@@ -41,7 +41,7 @@ and facilitate transfer.
 
 \begin{figure}
   \centering
-  \includegraphics[width=0.4\textwidth]{./assets/pictures/purifier
+  \includegraphics[width=0.6\textwidth]{./assets/pictures/purifier
   transfer tank.jpg}
   \caption{Image of the unheated portion of the transfer line before heating.}
   \label{fig: purifier transfer tank}
@@ -49,7 +49,7 @@ and facilitate transfer.
 
 \begin{figure}
   \centering
-  \includegraphics[width=0.4\textwidth]{
+  \includegraphics[width=0.6\textwidth]{
     ./assets/pictures/purifier reaction chamber.jpg
   }
   \caption{Image of the unheated portion of the reaction chamber line
@@ -64,104 +64,51 @@ aluminum was increased. This was attributed to some of the alumina insulation
 falling into the purifier while salt was being loaded. \par
 
 % TODO: Ask Kyle for ICPMS data.
+% TODO: Show combustion analyzer data
 % TODO: Check the order of events here.
 
-\pagebreak
+Following combustion analysis, it was found that hydrogen fluoride was not
+being sparged through the FLiNaK due to the high oxygen content in the salt.
+The flow controller connected to the hydrogen fluoride cylinder was found to
+be non-functional. The controls for the flow controller was modified to work
+with the LabView program and tested. It was then reattached and purification
+was attempted again, but with hydrogen fluoride introduced to the
+sparging gas. \par
 
-\begin{enumerate}
-  \item The FLiNaK purifier successfully ran twice with hydrogen sparging.
-    The \ch{HF} flow controller was unknowingly not functioning during the
-    runs.
-  \item Following two successful runs, another run was attempted with \ch{HF}
-    running. However, a blowtorch was needed to encourage salt flow
-    during salt transfer.
-  \item The \ch{HF} flow controller was disposed of, and liquid HF
-    buildup inside the
-    feed line was dunked into a \SI{14}{M}
-    % TODO: Confirm 14 M, get original controller model and manufacturer.
-    \ch{KOH} solution.
-  \item An Aalborg controller was used to regulate \ch{HF} flow. The
-    flow was then controlled using LabView. Flow was confirmed by sending
-    \ch{HF} into the bubbler. The buildup of liquid HF was controlled by
-    occasionally closing the HF regulator.
-  \item Purification ran successfully, but the salt clogged in the
-    line when attempting to transfer
-    due to inadequate heating.
-  \item Attempting to transfer, the large Ni filter was clogged, and the entire
-    transfer line had to be replaced.
-    % TODO: Confirm the order of events here.
-    % TODO: Include an image of the original filter.
-  \item The in-line filter was replaced with a smaller filter from Swagelok.
-    % TODO: Ask Kyle what the pore size of the SL filter was.
-    % TODO: Include an image of the Swagelok filter
-  \item The purifier was run once again, and the transfer was once
-    again attempted.
-    However, the heating tape used to heat the transfer line was
-    inadequately heated and the tape failed and shorted. This happened during
-    several attempts.
-  \item Exhaust pipe fiber glass insulating wrap was placed around the transfer
-    line under the heating
-    tape to attempt to avoid electrical shorting. This worked poorly,
-    as the tape
-    once again failed. Insulating the heat tape resulted in excess
-    heat buildup and
-    failure.
-  \item The tape was again applied directly to the transfer line,
-    followed by fiber glass tape,
-    and finally with Kaowool.
-  \item The tape was carefully wrapped tightly around the transfer
-    line, and a system
-    using 5 thermocouples was used to monitor the temperature of the
-    transfer line.
-  \item This system revealed that the line was not evenly heated, and
-    several points along the
-    transfer line got significantly hotter than other points.
-  \item A Briskheat controller was used previously to control the
-    temperature of the heat tape. This was replaced
-    with a Variac to avoid the overshoot of the on-off behavior of the
-    Briskheat heat tape controllers.
-  \item Multiple heating tapes (controlled with Variacs) were used to
-    attempt zone-heating.
-    This was partially successful, but salt got stuck at the entrance
-    of the transfer tank.
-  \item A large thermal mass of stainless steel at the entrance of
-    the transfer tank (which is
-    1" thick) caused salt to freeze.
-  \item The final run used a previously frozen transfer line. After a
-    previous run, some bulging was noted on the transfer line near
-    the reaction chamber. However, this was disregarded. In addition,
-    material for a new transfer line was not available, so the existing
-    line was used.\footnote{During these failed attempts, the salt
-      was left inside the reaction
-      chamber, and likely exposed to air throughout. Often, several
-      months went by without any purging or argon cover gas being introduced.
-    As a result, the salt was likely contaminated.}
-  \item While heating the transfer line overnight to attempt to melt
-    the salt contained inside, the transfer line ruptured at the
-    bulging point. This resulted
-    in FLiNaK mixing with the insulation, shorting the heating tape,
-    and ending the
-    attempt. Immediate cleanup was then undertaken by Kyle Williams
-    and Adrian Silva.
-  \item Following the failure, Kyle Williams left Texas A\&M to take
-    a job at Kairos Power. The project was taken over by Nathaniel Thomas.
-  \item Note also that the Ni needle valves would tend to clog with salt, due
-    to the high thermal mass.
-  \item Note that during operation on these attempted transfers, the
-    maximum vacuum that could be pulled on the
-    transfer tank was \SI{4}{Torr}. This indicated the presence of a
-    leak. This may have
-    allowed air into the system, accelerating corrosion, especially
-    at high temperatures.
-\end{enumerate}
+% TODO: The order of events here is not clear. Clarify with Kyle.
+However, it was found that the hydrogen fluoride was condensing in the
+transparent polyfluorocarbon feed line to the controller. This was due
+to the low boiling point of HF (\SI{67.1}{\celsius}). This resuhis,lted
+in hydrogen fluoride liquid passing through the flow controller.
+This damaged the flow controller and disabled it from opening. Because
+of this, liquid HF accumulated in the feed line, and the liquid had to be
+released into a KOH scrubbing solution. The flow controller was submerged in
+the solution and was destroyed. \par
 
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=0.6\textwidth,
-  angle=270]{./assets/pictures/chamber failure.jpeg}
-  \caption{The reaction chamber following the transfer line rupture. ()}
-  \label{fig: ruptured transfer line}
-\end{figure}
+An Aalborg flow controller replaced the gas flow controller and was used to
+conduct a successful hydrofluorination. The \ch{HF} cylinder was also
+wrapped with
+a cylinder heating band to encourage HF vaporization and reduce condensation.
+Following this change, the \ch{HF} was successfully introduced to the system.
+However, due to occasional liquid buildup, the supply (the HF cylinder) had to
+be shut approximately every hour to allow HF to boil off and avoid flooding the
+flow controller.
+\par
+
+% TODO: Based solely on my memory, confirm with pictures and Kyle.
+
+Purification was successful and completed without incident. However, the
+transfer stage of the purifier operation was not successful. Heating tape
+was applied to the transfer line, including along the valves, but the heating
+tape was not able to bring the transfer line above the melting point of
+FLiNaK (\SI{462}{\celsius}). Because of this, FLiNaK was trapped in
+the micron filter that was used to extract precipitated purification
+products and froze. This prevented the transfer from succeeding. Images of the
+clogged components can be seen in
+\Cref{fig: transfer lid clog,fig:
+  clogged needle valve front,fig:
+  clogged needle valve back,fig:
+fully clogged needle valve}. \par
 
 \begin{figure}[H]
   \centering
@@ -200,6 +147,16 @@ falling into the purifier while salt was being loaded. \par
   \label{fig: fully clogged needle valve}
 \end{figure}
 
+% TODO: Ask Kyle where he got the large Ni filter.
+\begin{figure}
+  \centering
+  \includegraphics[width=0.6\textwidth]{./assets/pictures/original
+  transfer line.jpg}
+  \caption{An image of the original transfer line with a large Ni filter on it.
+  (9-4-2025)}
+  \label{fig: original transfer line}
+\end{figure}
+
 % TODO: Find a failure
 % \begin{figure}[H]
 %   \centering
@@ -210,6 +167,264 @@ falling into the purifier while salt was being loaded. \par
 %   failure point. (8-18-2025)}
 %   \label{fig: heat tape failure}
 % \end{figure}
+
+% TODO: Find a picture of the impure FLiNaK that came over following
+% purification.
+% TODO: If available, get ICPMS data as well.
+
+Following the clog, and failure to melt the salt using a blowtorch,
+the transfer line was removed from the system and replaced with a new line. The
+original line is shown in \Cref{fig: original transfer line}.
+Note that FLiNaK was found throughout the line, indicating full transport of
+FLiNaK all the way up to the transfer tank. The tranfer tank also contained a
+small quantity of FLiNaK, but it was gray-colored and very impure. There
+was a visible clog of FLiNaK coming out of the top of the transfer tank
+that had excess FLiNaK coming through. \par
+
+A new transfer line was constructed and placed on the purifier. A smaller
+Swagelok micron filter replaced the large Ni filter that was originally
+in place. The FLiNaK that was still inside the purifier was repurified,
+and a second transfer was attempted. An initial transfer attempt resulted
+in a salt freeze. A subsequent attempt to melt the salt in the transfer
+line to resume the transfer did not help. This transfer attempt suffered
+from heat tape shorting. Due to poor heat transfer, the heat tape used to heat
+the line failed and shorted to the metal of the purifier. Blowtorches were
+also used to attempt to heat the transfer line, with little success.
+The transfer line was then replaced. This second line is shown in
+\Cref{fig: second transfer line}.
+\par
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.6\textwidth]{./assets/pictures/second
+  transfer line.jpg}
+  \caption{Image of the second transfer line following clogging and removal. It
+    is next to the first line, with a brass needle valve in place to prevent the
+  FLiNaK inside from escaping. (9-3-2025)}
+  \label{fig: second transfer line}
+\end{figure}
+
+Following the heat tape failure, changes to the insulation were
+made. Originally, Kaowool insulation was placed on the transfer
+line with hose clamps made of stainless steel. This was replaced with exhaust
+pipe fiberglass tape. The heat tape was then applied on top, and finally
+covered with Kaowool. All insulation and heat tape was held in place
+using 316L stainless steel zip ties. The transfer tank was also left
+with excess heat tape on top
+to encourage more heat to be concentrated on the lid of the transfer tank,
+discouraging freezing. This worked poorly, and the heat tape
+failed and arced. This resulted in molten glass at the arc point.
+This was a poor design decision,
+as the insulation between the heat tape and the transfer line resulted in the
+heat tape heating up excessively, resulting in a failure similar to the
+previous attempt, but with more molten glass present. Manual heating with a
+blowtorch around the transfer tank lid also resulted in the ball valves on
+the transfer tank lid to fail. The seats failed, resulting in loss of vacuum
+sealing ability.
+\par
+
+Finally, it was determined that tight wrapping, gentle heating, and thorough
+temperature monitoring was needed to ensure reliable heating. Five
+thermocouples were applied at various points along the transfer line.
+One at the base of the transfer line above the reaction chamber.
+Heat tape was applied to the transfer line with great care, ensuring there
+was no twists or overlap in the tape. Fiberglass tape was then applied on
+top, and finally Kaowool was wrapped on the outside of the transfer line.
+The on/off heating controller from BriskHeat that was used to control the
+temperature of the transfer line was replaced with a Variac. In addition,
+three separate heating tapes, each with their own Variac, were used to
+implement zone heating. This allowed more power to be applied to some point
+of the transfer line compared to others. \par
+
+This same transfer line experienced multiple transfer attempts, each while
+salt was present inside the line. During repeated transfer attempts,
+the FLiNaK inside the line partially melted and resolidified. When the salt
+was melted again, it resulted in expansion and bulging of the transfer line.
+This can be seen in \Cref{fig: bulged transfer line}.
+On the final transfer attempt, the transfer line was left to slowly heat up
+until the FLiNaK inside the line melted. But during this transfer attempt, the
+bulged area of the transfer line expanded further, and burst. This resulted in
+molten FLiNaK leaking out onto the lid of the reaction chamber. This shorted
+the heating tape and resulted in a total system failure, which can
+be seen in \Cref{fig: ruptured transfer line} and
+\Cref{fig: main failure image}. The subsequent reconstruction and design
+improvements are outline in \Cref{sec: reconstruction}. \par
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.6\textwidth]{./assets/pictures/bulged
+  transfer line.jpg}
+  \caption{An image of the bulged transfer line. It is blurred due to poor
+  focusing.}
+  \label{fig: bulged transfer line}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth,
+  angle=270]{./assets/pictures/chamber failure.jpeg}
+  \caption{The reaction chamber following the transfer line rupture.
+    This was the day after the primary failure. Salt can be seen
+    mixed with insulation, and a clear failure is evident. It is yet
+  unknown what the blue substance is.  (8-30-2025)}
+  \label{fig: ruptured transfer line}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.6\textwidth]{./assets/pictures/main
+  failure image.jpg}
+  \caption{An image of the system a few days after the failure with some
+    insulation removed. Note the
+    molten and discolored alumina insulation, as well as the extensive
+  corrosion. (9-2-2024)}
+  \label{fig: main failure image}
+\end{figure}
+
+Note that the repeated heating/cooling cycles in the presence of FLiNaK
+resulted in extensive corrosion of the Ni high temperature needle valves,
+as well as the destruction of the stainless steel ferrules used to seal the
+fittings connecting the valves to the transfer line. An image of the corroded
+ferrule and needle valve is shown in \Cref{fig: corroded needle valve}. There
+was also a lack of salt in the transfer line around the reaction chamber,
+due to leakage. In \Cref{fig: transfer line inside}, the inside of the
+transfer line is devoid of salt, due to leakage. A top-down view inside
+the burst area is shown \Cref{fig: reaction chamber line viewkj}.
+It should also be noted that all three needle valves used in this system
+were completely seized and unable to open or close. This may have partially
+been due to corrosion, in addition to the presence of frozen FLiNaK inside
+the valve flow path. \par
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.6\textwidth]{./assets/pictures/corroded
+  needle valve.jpg}
+  \caption{An image of the corroded needle valve and ferrule
+  following disassembly. (9-4-2025)}
+  \label{fig: corroded needle valve}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.6\textwidth]{./assets/pictures/transfer
+  line inside.jpg}
+  \caption{The inside of the transfer line following disassembly. Note the
+    lack of salt. Having spilled out of the transfer line, there was none
+  present in the portion of the line above the reaction chamber. (9-4-2025)}
+  \label{fig: transfer line inside}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.6\textwidth]{./assets/pictures/reaction
+  chamber line view.jpg}
+  \caption{A top-down view of the top of the reaction chamber
+  transfer line (9-4-2025)}
+  \label{fig: reaction chamber line view}
+\end{figure}
+
+\par
+
+\pagebreak
+
+% \begin{enumerate}% {{{
+%   \item The FLiNaK purifier successfully ran twice with hydrogen sparging.
+%     The \ch{HF} flow controller was unknowingly not functioning during the
+%     runs.
+%   \item Following two successful runs, another run was attempted with \ch{HF}
+%     running. However, a blowtorch was needed to encourage salt flow
+%     during salt transfer.
+%   \item The \ch{HF} flow controller was disposed of, and liquid HF
+%     buildup inside the
+%     feed line was dunked into a \SI{14}{M}
+%     % TODO: Confirm 14 M, get original controller model and manufacturer.
+%     \ch{KOH} solution.
+%   \item An Aalborg controller was used to regulate \ch{HF} flow. The
+%     flow was then controlled using LabView. Flow was confirmed by sending
+%     \ch{HF} into the bubbler. The buildup of liquid HF was controlled by
+%     occasionally closing the HF regulator.
+%   \item Purification ran successfully, but the salt clogged in the
+%     line when attempting to transfer
+%     due to inadequate heating.
+%   \item Attempting to transfer, the large Ni filter was clogged,
+% and the entire
+%     transfer line had to be replaced.
+%     % TODO: Confirm the order of events here.
+%     % TODO: Include an image of the original filter.
+%   \item The in-line filter was replaced with a smaller filter from Swagelok.
+%     % TODO: Ask Kyle what the pore size of the SL filter was.
+%     % TODO: Include an image of the Swagelok filter
+%   \item The purifier was run once again, and the transfer was once
+%     again attempted.
+%     However, the heating tape used to heat the transfer line was
+%     inadequately heated and the tape failed and shorted. This happened during
+%     several attempts.
+%   \item Exhaust pipe fiber glass insulating wrap was placed around
+% the transfer
+%     line under the heating
+%     tape to attempt to avoid electrical shorting. This worked poorly,
+%     as the tape
+%     once again failed. Insulating the heat tape resulted in excess
+%     heat buildup and
+%     failure.
+%   \item The tape was again applied directly to the transfer line,
+%     followed by fiber glass tape,
+%     and finally with Kaowool.
+%   \item The tape was carefully wrapped tightly around the transfer
+%     line, and a system
+%     using 5 thermocouples was used to monitor the temperature of the
+%     transfer line.
+%   \item This system revealed that the line was not evenly heated, and
+%     several points along the
+%     transfer line got significantly hotter than other points.
+%   \item A Briskheat controller was used previously to control the
+%     temperature of the heat tape. This was replaced
+%     with a Variac to avoid the overshoot of the on-off behavior of the
+%     Briskheat heat tape controllers.
+%   \item Multiple heating tapes (controlled with Variacs) were used to
+%     attempt zone-heating.
+%     This was partially successful, but salt got stuck at the entrance
+%     of the transfer tank.
+%   \item A large thermal mass of stainless steel at the entrance of
+%     the transfer tank (which is 1" thick) caused salt to freeze.
+%   \item The final run used a previously frozen transfer line. After a
+%     previous run, some bulging was noted on the transfer line near
+%     the reaction chamber. However, this was disregarded. In addition,
+%     material for a new transfer line was not available, so the existing
+%     line was used.
+%     \footnote{During these failed attempts, the salt
+%       was left inside the reaction chamber, and likely exposed to air
+%       throughout. Often, several months went by without any purging or
+%       argon cover gas being introduced. As a result, the salt was likely
+%     contaminated.}
+%   \item While heating the transfer line overnight to attempt to melt
+%     the salt contained inside, the transfer line ruptured at the
+%     bulging point. This resulted
+%     in FLiNaK mixing with the insulation, shorting the heating tape,
+%     and ending the
+%     attempt. Immediate cleanup was then undertaken by Kyle Williams
+%     and Adrian Silva.
+%   \item Following the failure, Kyle Williams left Texas A\&M to take
+%     a job at Kairos Power. The project was taken over by Nathaniel Thomas.
+%   \item Note also that the Ni needle valves would tend to clog with salt, due
+%     to the high thermal mass.
+%   \item Note that during operation on these attempted transfers, the
+%     maximum vacuum that could be pulled on the
+%     transfer tank was \SI{4}{Torr}. This indicated the presence of a
+%     leak. This may have
+%     allowed air into the system, accelerating corrosion, especially
+%     at high temperatures.
+% \end{enumerate}% }}}
+
+\hrule
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth]{assets/pictures/sonicated
+  transfer line.jpg}
+  \caption{Image of the salt transfer line with a salt clog, from above
+  the transfer tank following sonication. (9-2-2025)}
+  \label{fig: sonicated transfer line}
+\end{figure}
 
 \begin{figure}[H]
   \centering
