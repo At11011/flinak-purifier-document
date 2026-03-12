@@ -63,7 +63,7 @@ making a reactor for producing commercial power. This project,
 beginning in from 1957, starting operation fueled in 1965, concluding
 fueled operation in 1969, and continuing experiments until 1975,
 provided the largest single source of data for the performance,
-requirements, and behaviors of a commercial power plant scale molten salt loop. 
+requirements, and behaviors of a commercial power plant scale molten salt loop.
 \par
 
 Beginning in 1957, it was noticed that the new salt chosen (\ch{Li2BeF4})
@@ -111,208 +111,362 @@ funding and manpower were minimal until all work on the project ceased in 1975.
 \section{Types of Molten Salt and their Properties}
 \label{sec: salt properties}
 
-Focus is directed on two types of fluoride salts: \ch{Li2BeF4} (FLiBe) and 
+Focus is directed on two types of fluoride salts: \ch{Li2BeF4} (FLiBe) and
 \ch{LiNaKF3}
-(FLiNaK). Any mention of other salts is done so for the sake of approximating 
+(FLiNaK). Any mention of other salts is done so for the sake of approximating
 behaviors to these two types.
-FLiBe is a 0.66:0.34 molar mixture of \ch{LiF} and \ch{BeF2} respectively. It 
-has a 
-melting point of \SI{459}{\celsius} \cite{rev16}, \cite{rev17}. 
-It melts into a clear, neutral 
-solution making noticing contaminants rather easy. It is typically 
-favored as a fuel salt due to its more favorable nuclear cross section neutral 
-Lewis acid-base chemistry \cite{rev18}. A FLiBe based mixture was used for the 
-fuel loop of the MSRE project\cite{rev19, rev20, rev21, rev22}. Its density 
-($\rho$), dynamic viscosity ($\eta$), thermal conductivity ($\lambda$), and 
-heat capacity ($C_p$) are shown in 
-\Cref{eq: flibe density,eq: flibe viscosity,eq: flibe conducivity,eq: 
+FLiBe is a 0.66:0.34 molar mixture of \ch{LiF} and \ch{BeF2} respectively. It
+has a
+melting point of \SI{459}{\celsius} \cite{rev16}, \cite{rev17}.
+It melts into a clear, neutral
+solution making noticing contaminants rather easy. It is typically
+favored as a fuel salt due to its more favorable nuclear cross section neutral
+Lewis acid-base chemistry \cite{rev18}. A FLiBe based mixture was used for the
+fuel loop of the MSRE project\cite{rev19, rev20, rev21, rev22}. Its density
+($\rho$), dynamic viscosity ($\eta$), thermal conductivity ($\lambda$), and
+heat capacity ($C_p$) are shown in
+\Cref{eq: flibe density,eq: flibe viscosity,eq: flibe conducivity,eq:
 flibe heat capacity}. \cite{rev17} \par
 
 \begin{equation}
-    \rho\si{\left(\frac{\kilo\gram}{\meter\cubed}\right)} = 2413.03 - 0.4884
-    T(\si{K}), T \in [\qtyrange{788}{1094}{\kelvin}]
-    \label{eq: flibe density}
+  \rho\si{\left(\frac{\kilo\gram}{\meter\cubed}\right)} = 2413.03 - 0.4884
+  T(\si{K}), T \in [\qtyrange{788}{1094}{\kelvin}]
+  \label{eq: flibe density}
 \end{equation}
 
 \begin{equation}
-    \eta(\si{\pascal\second}) = 0.000116 \cdot \exp(3755 T(\si{\kelvin})), T 
-    \in [\qtyrange{800}{1050}{\kelvin}]
-    \label{eq: flibe viscosity}
+  \eta(\si{\pascal\second}) = 0.000116 \cdot \exp(3755 T(\si{\kelvin})), T
+  \in [\qtyrange{800}{1050}{\kelvin}]
+  \label{eq: flibe viscosity}
 \end{equation}
 
 \begin{equation}
-    \lambda\left(\si{\frac{\watt}{\meter\kelvin}}\right) = 1.10 
-    \label{eq: flibe conducivity}
+  \lambda\left(\si{\frac{\watt}{\meter\kelvin}}\right) = 1.10
+  \label{eq: flibe conducivity}
 \end{equation}
 
 \begin{equation}
-    C_p\left(\si{\frac{\joule}{\kilo\gram\kelvin}}\right) = 2385
-    \label{eq: flibe heat capacity} \\
+  C_p\left(\si{\frac{\joule}{\kilo\gram\kelvin}}\right) = 2385
+  \label{eq: flibe heat capacity} \\
 \end{equation}
 
-FLiNaK is a 0.465:0.115:0.42 molar mixture of \ch{LiF}, \ch{NaF}, and \ch{KF} 
-respectively. It has a melting point of \SI{454}{\celsius}  
-\cite{rev17}. It melts into a clear, chemically basic solution 
-\cite{rev18}. FLiNaK is often used in place of FLiBe in molten salt research 
-not involving fuel, despite its lower heat capacity, due to its lack of any 
-highly toxic beryllium, however it is more corrosive than FLiBe due to the 
-presence of free fluoride ions in its molten state \cite{rev18}. 
-Its density, dynamic viscosity, thermal conductivity, and heat capacity are 
+FLiNaK is a 0.465:0.115:0.42 molar mixture of \ch{LiF}, \ch{NaF}, and \ch{KF}
+respectively. It has a melting point of \SI{454}{\celsius}
+\cite{rev17}. It melts into a clear, chemically basic solution
+\cite{rev18}. FLiNaK is often used in place of FLiBe in molten salt research
+not involving fuel, despite its lower heat capacity, due to its lack of any
+highly toxic beryllium, however it is more corrosive than FLiBe due to the
+presence of free fluoride ions in its molten state \cite{rev18}.
+Its density, dynamic viscosity, thermal conductivity, and heat capacity are
 shown in \Cref{eq: flinak density,eq: flinak viscosity,eq: flinak
-    conductivity,eq: flinak heat capacity} \cite{rev17}. \par
+conductivity,eq: flinak heat capacity} \cite{rev17}. \par
 
 \begin{equation}
-    \rho\si{\left(\frac{\kilo\gram}{\meter\cubed}\right)} = 2579.3 - 0.6237T
-        (\si{\kelvin}),T\in[\qtyrange{933}{1170}{\kelvin}]
-    \label{eq: flinak density}
+  \rho\si{\left(\frac{\kilo\gram}{\meter\cubed}\right)} = 2579.3 - 0.6237T
+  (\si{\kelvin}),T\in[\qtyrange{933}{1170}{\kelvin}]
+  \label{eq: flinak density}
 \end{equation}
 
 \begin{equation}
-    \eta(\si{\pascal\second}) = 0.0000249\cdot10^\frac{944}{T\si{(\kelvin)}},T
-    \in [\qtyrange{733}{1163}{\kelvin}] 
-    \label{eq: flinak viscosity}
+  \eta(\si{\pascal\second}) = 0.0000249\cdot10^\frac{944}{T\si{(\kelvin)}},T
+  \in [\qtyrange{733}{1163}{\kelvin}]
+  \label{eq: flinak viscosity}
 \end{equation}
 
 \begin{equation}
-    \lambda\si{\left(\frac{\watt}{\meter\kelvin}\right)} = 0.85
-    \label{eq: flinak conductivity}
+  \lambda\si{\left(\frac{\watt}{\meter\kelvin}\right)} = 0.85
+  \label{eq: flinak conductivity}
 \end{equation}
 
 \begin{equation}
-    C_p\si{\left(\frac{\joule}{\kilo\gram\kelvin}\right)} = 1880
-    \label{eq: flinak heat capacity}
+  C_p\si{\left(\frac{\joule}{\kilo\gram\kelvin}\right)} = 1880
+  \label{eq: flinak heat capacity}
 \end{equation}
 
 \section{Effects of Contaminants of Molten Salt Performance}
 \label{sec: contaminants}
 
-The presence of contaminants in a molten salt mix causes a series of 
-undesirable reactions to occur, overall decreasing the performance of the 
-salt. Among these reactions, one of note is the acceleration of corrosion of 
-structural metals in direct contact with the salt. Although the effects of 
-contaminants on salt are not sustained, they can have immediate pronounced 
+The presence of contaminants in a molten salt mix causes a series of
+undesirable reactions to occur, overall decreasing the performance of the
+salt. Among these reactions, one of note is the acceleration of corrosion of
+structural metals in direct contact with the salt. Although the effects of
+contaminants on salt are not sustained, they can have immediate pronounced
 effects on corrosivity \cite{rev23}. \par
 
 \subsection{Oxygen}
 \label{sec: oxygen}
 
-Due to their relatively high concentrations and their increased time to remove, 
-the most concerning contaminants of note are oxides and hydroxide 
-compounds \cite{rev18}. Since every constituent fluoride salt used in both 
-FLiBe and FLiNaK is hydroscopic, water from the air will be absorbed into the 
-salt. Water reacts with the fluorine ion in fluoride salts to form \ch{HF}, metal 
-hydroxides, and metal oxides. In salts containing \ch{UF4}, a high enough oxide 
-concentration was found to cause \ch{UO2} to fall out of solution and collect in 
-lines, creating hot spots \cite{rev10}, \cite{rev21}. This issue was 
+Due to their relatively high concentrations and their increased time to remove,
+the most concerning contaminants of note are oxides and hydroxide
+compounds \cite{rev18}. Since every constituent fluoride salt used in both
+FLiBe and FLiNaK is hydroscopic, water from the air will be absorbed into the
+salt. Water reacts with the fluorine ion in fluoride salts to form
+\ch{HF}, metal
+hydroxides, and metal oxides. In salts containing \ch{UF4}, a high enough oxide
+concentration was found to cause \ch{UO2} to fall out of solution and collect in
+lines, creating hot spots \cite{rev10}, \cite{rev21}. This issue was
 minimized by MSRE scientists through the addition of up to \SI{5}{\percent}
-\ch{ZrF4} to the salt mixture to 
-act as a thermodynamically favored oxide buffer \cite{rev21}. The 
-\ch{HF} formed from the reaction between water and salt can corrode structural 
-materials such as \ch{Cr} and \ch{Fe} through fluorination. Despite this, 
-Aia et al., found that high enough concentrations of oxides in molten FLiNaK, 
-in excess of \SI{1000}{ppm}, can 
-actually retard the corrosion of 316SS \cite{rev24}. A high oxide concentration 
-was found to change the corrosion products from \ch{Fe3O4} and \ch{Cr2O3} to 
-\ch{CrLiO2}, which formed a more stable passivation layer between the salt and 
+\ch{ZrF4} to the salt mixture to
+act as a thermodynamically favored oxide buffer \cite{rev21}. The
+\ch{HF} formed from the reaction between water and salt can corrode structural
+materials such as \ch{Cr} and \ch{Fe} through fluorination. Despite this,
+Aia et al., found that high enough concentrations of oxides in molten FLiNaK,
+in excess of \SI{1000}{ppm}, can
+actually retard the corrosion of 316SS \cite{rev24}. A high oxide concentration
+was found to change the corrosion products from \ch{Fe3O4} and \ch{Cr2O3} to
+\ch{CrLiO2}, which formed a more stable passivation layer between the salt and
 metal \cite{rev24}. \par
 
-Originally, oxygen concentration was measured by reacting salts with an 
-aggressive fluorinating agent, and measuring the amount of oxygen 
-released \cite{rev25}. While attempts using \ch{KBrF4} were successful at 
-measuring up to \SI{98}{\percent} of the oxygen content, aggressive 
-fluorinating agents present multiple safety issues, as will be discussed in 
-Section 4 \cite{rev25}, \cite{rev26}. Cyclic voltammetry can be used to 
-measure a change in the amount of oxygen ions \cite{rev27}; however, since the 
-exact forms of oxides in the salt are unknown, it is unknown if this method 
-is sufficient to accurate. Recently, combustion analysis became the standard 
-for determining oxygen concentration. Combustion analysis works by melting 
-the salt in a graphite crucible at a high enough temperature such that the 
-oxygen in the salt will react with the crucible to form \ch{CO}, which can 
-then be converted to \ch{CO2} and measured via thermal conductivity 
+Originally, oxygen concentration was measured by reacting salts with an
+aggressive fluorinating agent, and measuring the amount of oxygen
+released \cite{rev25}. While attempts using \ch{KBrF4} were successful at
+measuring up to \SI{98}{\percent} of the oxygen content, aggressive
+fluorinating agents present multiple safety issues, as will be discussed in
+Section 4 \cite{rev25}, \cite{rev26}. Cyclic voltammetry can be used to
+measure a change in the amount of oxygen ions \cite{rev27}; however, since the
+exact forms of oxides in the salt are unknown, it is unknown if this method
+is sufficient to accurate. Recently, combustion analysis became the standard
+for determining oxygen concentration. Combustion analysis works by melting
+the salt in a graphite crucible at a high enough temperature such that the
+oxygen in the salt will react with the crucible to form \ch{CO}, which can
+then be converted to \ch{CO2} and measured via thermal conductivity
 detectors \cite{rev26}. \par
 
 \subsection{Sulfur}
 \label{sec: sulfur}
 
-Sulfide and sulfate contaminants encourage increased corrosion by altering 
-redox potential. Sulfur compounds can attack noble metals like nickel and 
-form \ch{NiS}, which can then be attacked by fluoride ions to form \ch{NiF}, 
-which will dissolve into the salt solution, corroding loop structures 
-\cite{rev10}, \cite{rev21}. Although less abundant in constituent salts used 
-today, sulfur was a major contaminant of consideration for MSRE operations, 
-due to large amounts of it being present in their \ch{LiF} supply 
-\cite{rev10}, \cite{rev28}. Sulfates and sulfites also decompose at high 
-temperatures (\qtyrange{600}{1000}{\celsius}), releasing more oxygen 
-into the salt \cite{rev29}.  Sulfur contaminants tend to be removed 
-faster and more completely than oxygen contaminants \cite{rev30}. A standard 
-method of measuring sulfur content was not found. This is likely due to the 
-lack of a need for one. Sulfur is completely removed from the system long 
-before oxygen for all of the purification methods discussed. \cite{rev27}, 
+Sulfide and sulfate contaminants encourage increased corrosion by altering
+redox potential. Sulfur compounds can attack noble metals like nickel and
+form \ch{NiS}, which can then be attacked by fluoride ions to form \ch{NiF},
+which will dissolve into the salt solution, corroding loop structures
+\cite{rev10}, \cite{rev21}. Although less abundant in constituent salts used
+today, sulfur was a major contaminant of consideration for MSRE operations,
+due to large amounts of it being present in their \ch{LiF} supply
+\cite{rev10}, \cite{rev28}. Sulfates and sulfites also decompose at high
+temperatures (\qtyrange{600}{1000}{\celsius}), releasing more oxygen
+into the salt \cite{rev29}.  Sulfur contaminants tend to be removed
+faster and more completely than oxygen contaminants \cite{rev30}. A standard
+method of measuring sulfur content was not found. This is likely due to the
+lack of a need for one. Sulfur is completely removed from the system long
+before oxygen for all of the purification methods discussed. \cite{rev27},
 \cite{rev30}–\cite{rev32}.\par
 
 \subsection{Structural Metals}
 \label{sec: structural metals}
 
-Structural metal contaminants, such as fluorinated \ch{Cr}, \ch{Fe}, and 
-\ch{Ni}, affect the nuclear cross section of the salt, and can contribute to 
-loop clogging by deposition to pure metals, and can increase corrosion rates 
-\cite{rev10}, \cite{rev29}. Molten fluorides prefer to attack \ch{Cr} over 
-\ch{Ni} or \ch{Fe} \cite{rev23}, \cite{rev33,rev34,rev35,rev36,rev37}. 
-Because \ch{Cr} is the preferred metal to attack, any \ch{Ni} or \ch{Fe} in the 
-salt as fluorides will shift the redox potential and cause \ch{Cr} to be 
-further attacked through substitutive fluorination \cite{rev29}. An excess of 
-\ch{Cr} in the salt can cause it to plate out of solution onto other 
-metal surfaces, diffusing into those surfaces and weaking the metals resistance 
-to future corrosion when the redox potential of the salt changes again 
-\cite{rev29}. Outside of salt corrosion, metal fluorides are often introduced 
-by the oxidation of structural metals alloy constituents by contact with 
-strong fluorinating agents \cite{rev21}, \cite{rev29}, \cite{rev38}. These 
-metal fluoride contaminants then dissolve into the molten salt mix to disrupt 
-its chemical equilibrium. The concentration of metal impurities can be easily 
-measured through inductively coupled plasma (ICP) spectroscopy \cite{rev26}. 
-Just like with oxygen, cyclic voltammetry can also be used to determine the 
-metal concentration relative to a standard but lacks the ability to give 
+Structural metal contaminants, such as fluorinated \ch{Cr}, \ch{Fe}, and
+\ch{Ni}, affect the nuclear cross section of the salt, and can contribute to
+loop clogging by deposition to pure metals, and can increase corrosion rates
+\cite{rev10}, \cite{rev29}. Molten fluorides prefer to attack \ch{Cr} over
+\ch{Ni} or \ch{Fe} \cite{rev23}, \cite{rev33,rev34,rev35,rev36,rev37}.
+Because \ch{Cr} is the preferred metal to attack, any \ch{Ni} or \ch{Fe} in the
+salt as fluorides will shift the redox potential and cause \ch{Cr} to be
+further attacked through substitutive fluorination \cite{rev29}. An excess of
+\ch{Cr} in the salt can cause it to plate out of solution onto other
+metal surfaces, diffusing into those surfaces and weaking the metals resistance
+to future corrosion when the redox potential of the salt changes again
+\cite{rev29}. Outside of salt corrosion, metal fluorides are often introduced
+by the oxidation of structural metals alloy constituents by contact with
+strong fluorinating agents \cite{rev21}, \cite{rev29}, \cite{rev38}. These
+metal fluoride contaminants then dissolve into the molten salt mix to disrupt
+its chemical equilibrium. The concentration of metal impurities can be easily
+measured through inductively coupled plasma (ICP) spectroscopy \cite{rev26}.
+Just like with oxygen, cyclic voltammetry can also be used to determine the
+metal concentration relative to a standard but lacks the ability to give
 precise values \cite{rev27}. \cite{rev39} \par
 
 \section{Purification Methods}
 \label{sec: purification methods}
 
-For the purposes removing the above-mentioned contaminants, hydrofluorination 
-has proven to be the most effective method of purifying molten fluoride salts 
-by ARE and MSRE scientists \cite{rev3}, \cite{rev21}. Hydrofluorination, in 
-these cases, is used as a blanket term to describe any process where a 
-substance is oxidized by a fluorinating agent then reduced by a hydrogenating 
-agent, producing \ch{HF} gas in the process. This method can be largely varied 
-using different fluorinating agents. Conceptually, if the redox potential is 
-the only property observed, pure fluorine gas would be the best for this 
-purpose. \ch{F2} was the first fluorinating agent used by the MSRE project for 
-their molten salt purification needs; however, pure fluorine gas proved to be 
-too corrosive to reactor vessels and was replaced \cite{rev21}. Varying the 
-hydrogenation agent is less flexible, as \ch{H2} gas has been used exclusively 
+For the purposes removing the above-mentioned contaminants, hydrofluorination
+has proven to be the most effective method of purifying molten fluoride salts
+by ARE and MSRE scientists \cite{rev3}, \cite{rev21}. Hydrofluorination, in
+these cases, is used as a blanket term to describe any process where a
+substance is oxidized by a fluorinating agent then reduced by a hydrogenating
+agent, producing \ch{HF} gas in the process. This method can be largely varied
+using different fluorinating agents. Conceptually, if the redox potential is
+the only property observed, pure fluorine gas would be the best for this
+purpose. \ch{F2} was the first fluorinating agent used by the MSRE project for
+their molten salt purification needs; however, pure fluorine gas proved to be
+too corrosive to reactor vessels and was replaced \cite{rev21}. Varying the
+hydrogenation agent is less flexible, as \ch{H2} gas has been used exclusively
 due to its ease of access, lack of corrosive properties, and lack of toxicity.
 \par
 
 \subsection{\ch{HF}-\ch{H2} Sparging}
 \label{sec: hf sparging}
 
-\ch{HF-H2} sparging is by far the most accepted and well documented form of 
-purifying molten fluoride salt mixtures. This method consists of bubbling a 
-mixture of anhydrous \ch{HF} gas and \ch{H2} gas through the molten salt in a 
+\ch{HF-H2} sparging is by far the most accepted and well documented form of
+purifying molten fluoride salt mixtures. This method consists of bubbling a
+mixture of anhydrous \ch{HF} gas and \ch{H2} gas through the molten salt in a
 sparge-tank-like reaction vessel. \par
 
 \subsubsection{Chemistry}
 \label{sec: hf chemistry}
 
+\ch{HF-H2} sparging removes oxygen and sulfur by the through the reaction
+mechanisms shown in
+\Cref{eq: O2 to H2O,eq: OH to H2O,eq: SO4 to S2,eq: SO3 to S2,eq: S
+to H2S} \cite{rev30}. \par
 
+\begin{equation}
+  \ch{O^{2-} + 2 HF <=> H2O + 2 F-} \label{eq: O2 to H2O} \\
+\end{equation}
+
+\begin{equation}
+  \ch{OH^{-} + HF <=> H2O + F-} \label{eq: OH to H2O} \\
+\end{equation}
+
+\begin{equation}
+  \ch{SO4^{2-} + 4 H2 <=> S^{-2} + 4 H2O} \label{eq: SO4 to S2} \\
+\end{equation}
+
+\begin{equation}
+  \ch{SO3^{2-} + 3 H2 <=> S^{-2} + 3 H2O} \label{eq: SO3 to S2} \\
+\end{equation}
+
+\begin{equation}
+  \ch{S^{2-} + 2 HF <=> H2S + 2F-} \label{eq: S to H2S} \\
+\end{equation}
+
+\ch{HF}, like all fluorinating agents, is corrosive to structural metals
+(Me) through the reaction mechanism shown in \Cref{eq: metal
+oxidation} \cite{rev30}.
+
+\begin{equation}
+  \ch{xMe + yHF <=> Me_xF_y + 0.5 yH2} \label{eq: metal oxidation}
+\end{equation}
+
+The corrosion of structural metals by HF adds metal contaminants to
+the salt mix. The addition of \ch{H2} gas
+suppresses this corrosion by not only acting as a reducing agent, but
+also by pushing \cref{eq: SO4 to S2,eq: SO3 to S2} to the
+right. Fluorination is however the rate limiting step of these
+reactions, so the concentration of \ch{HF} in the
+mix cannot be reduced too much without decreasing the reaction rate.
+Because of this, an optimal mix
+of \ch{HF} and \ch{H2} is required to balance reaction kinetics with vessel
+corrosion. The optimal ratio by volume
+of \ch{H2} to \ch{HF} was found to be roughly 10:1 \cite{rev21,rev30}. \par
 
 \subsubsection{Kinetics}
 \label{sec: hf kinetics}
 
+Zong et al. found the optimal purification time, molten salt sparge
+height, operating temperature, and
+gas mixture flow rate for \SI{5}{\liter} of FLiNaK salt \cite{rev30}.
+Assuming that
+FLiBe is similar enough to FLiNaK
+chemically and that the relationship between these values and molten
+salt volume is sufficiently linear,
+their data can be used to optimize the design of a reaction vessel
+while maintaining roughly the same
+purification time. The proper \ch{HF} effluent concentration at which to
+halt purification can also be
+determined. \par
+
+\Cref{fig: oxygen vs time,fig: impurities vs time,fig: oxygen vs
+  liquid height,fig:
+oxygen vs temperature,fig: oxygen vs gas flowrate}
+show their data.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.6\textwidth]{./assets/review/figures/oxygen_vs_time.pdf}
+  \caption{Oxygen content vs purification time for \SI{5}{\liter} of FLiNaK at
+    a liquid height of \SI{0.9}{\meter} and \SI{650}{\celsius} at a gas
+  flowrate of \SI{800}{\milli\liter\per\minute} \cite{rev30}}
+  \label{fig: oxygen vs time}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.6\textwidth]{./assets/review/figures/impurities_vs_time.pdf}
+  \caption{Other impurity content vs purification time for \SI{5}{\liter} of
+    FLiNaK at a liquid height of \SI{0.9}{\meter}, at \SI{650}{\celsius},
+  at a gas flowrate of \SI{800}{\milli\liter\per\minute} \cite{rev30}}
+  \label{fig: impurities vs time}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.6\textwidth]{./assets/review/figures/oxygen_vs_liquid_height.pdf}
+  \caption{Oxygen content vs liquid height for \SI{5}{\liter} of FLiNaK run for
+    \SI{48}{\hour} at \SI{650}{\celsius}, at a gas
+  flowrate of \SI{800}{\milli\liter\per\minute} \cite{rev30}}
+  \label{fig: oxygen vs liquid height}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.6\textwidth]{./assets/review/figures/oxygen_vs_temperature.pdf}
+  \caption{Oxygen content vs temperature for \SI{5}{\liter} of FLiNaK run for
+    \SI{48}{\hour} at a liquid height of \SI{0.9}{\meter}, at a gas
+  flowrate of \SI{800}{\milli\liter\per\minute} \cite{rev30}}
+  \label{fig: oxygen vs temperature}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.6\textwidth]{./assets/review/figures/oxygen_vs_gas_flow_rate.pdf}
+  \caption{Oxygen content vs gas flowrate for \SI{5}{\liter} of FLiNaK run for
+    \SI{48}{\hour} at a liquid height of \SI{0.9}{\meter}, at
+  \SI{650}{\celsius} \cite{rev30}}
+  \label{fig: oxygen vs gas flowrate}
+\end{figure}
+
+\pagebreak
+
+\Cref{fig: oxygen vs time,fig: impurities vs time}
+shows that, all other factors being at their optimal state, there is
+no appreciable change in
+the concentrations of any of the impurities after roughly \SI{48}{\hour} of
+hydrofluorination. This implies that
+running for any longer than this time is pointless so long as the
+system is optimized and gives a rough
+maximum for hydrofluorination time. \Cref{fig: oxygen vs temperature}
+shows that, all other
+factors being at their optimal state,
+the relationship between temperature and rate of oxide removal is
+weak and relatively flat. This is likely
+due to the increased gas residence time in cooler, more viscous salt
+offsetting the drop in rate constant
+caused by a decrease in temperature \cite{rev30}. \Cref{fig: oxygen
+vs gas flowrate}
+shows that, all other factors being at their optimal
+state, there is an optimal gas flowrate to maximize the rate of oxide
+removal, in this case, at \SI{800}{\milli\liter\per\minute}.
+This flowrate likely allows for the optimal mix of HF and salt to
+maximize reaction rate. How these
+factors change with respect to the amount of salt being produced has
+not been explored; however, it is
+assumed to be linear. \par
+
+\pagebreak
+
 \subsubsection{Reagent Properties and Hazards}
 \label{sec: hf reagent properties}
 
+Anhydrous \ch{HF} is a clear, highly corrosive liquid/gas at room
+temperature with
+a boiling point at \SI{19.5}{\celsius}.
+\ch{HF} is also highly toxic (4 on NFPA diamond). It can
+react with certain metals to release toxic and
+flammable gases. When it contacts water, hydrofluoric acid is formed,
+which is even more corrosive.
+Though not carcinogenic, it can cause severe acid burns if contacted
+with skin and severe lung
+inflammation and damage if inhaled. Because of its relatively high
+boiling point, \ch{HF} can also present a
+clogging hazard in thin, unheated lines \cite{rev31}.
+
 \subsubsection{Reagent Costs}
 \label{sec: hf reagent costs}
+
+The upfront costs of HF are relatively low, but due to its relatively high
+boiling point, trace heating on lines is necessary to minimize clogging
+issues. Its high corrosivity also means that structural elements
+will likely need to be replaced occasionally.
 
 \subsection{\ch{NF3}-\ch{H2} Sparging/\ch{NF3} Baking}
 \label{sec: nf3 sparging}
@@ -349,6 +503,8 @@ sparge-tank-like reaction vessel. \par
 
 \subsection{Continued H addition}
 \label{sec: continued h addition}
+
+\pagebreak
 
 \subsection{Reducing metal additions}
 \label{sec: reducing metal additions}
