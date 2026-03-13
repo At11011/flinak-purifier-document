@@ -304,8 +304,9 @@ sparge-tank-like reaction vessel. \par
 \subsubsection{Chemistry}
 \label{sec: hf chemistry}
 
-\ch{HF-H2} sparging removes oxygen and sulfur by the through the reaction
+\ch{HF-H2} sparging removes oxygen and sulfur by the reaction
 mechanisms shown in
+
 \Cref{eq: O2 to H2O,eq: OH to H2O,eq: SO4 to S2,eq: SO3 to S2,eq: S
 to H2S} \cite{rev30}. \par
 
@@ -331,7 +332,7 @@ to H2S} \cite{rev30}. \par
 
 \ch{HF}, like all fluorinating agents, is corrosive to structural metals
 (Me) through the reaction mechanism shown in \Cref{eq: metal
-oxidation} \cite{rev30}.
+oxidation} \cite{rev30}. \par
 
 \begin{equation}
   \ch{xMe + yHF <=> Me_xF_y + 0.5 yH2} \label{eq: metal oxidation}
@@ -481,8 +482,7 @@ known preference for using \ch{NF3} with molten or solid salt. \par
 \label{sec: nf3 chemistry and thermodynamics}
 
 \Cref{eq: NF3 oxide fluorination,eq: NF3 hydroxide fluorination} show
-the general reaction format for the reaction
-between \ch{NF3} and a component
+the general reaction format for the reaction between \ch{NF3} and a component
 salt oxide and hydroxide, respectively. \par
 
 \begin{equation}
@@ -679,47 +679,355 @@ could further increase the cost of \ch{NF3} compared to that of \ch{HF};
 however, because it is not as nearly corrosive, and is a gas at room
 temperature, heat tracing and noble alloy piping and fittings are not
 required to transport unheated \ch{NF3}. This could offset some of the
-aforementioned costs compared to \ch{HF}.
+aforementioned costs compared to \ch{HF}. \par
 
 \subsection{\ch{NF4HF2} Baking}
 \label{sec: nf4hf2 baking}
 
+Another available method for molten salt purification is \ch{NH4HF2} baking. This 
+process involves the addition of high purity \ch{NH4HF2} to the frozen salt mix. 
+This mixture is then placed in a sealed container and brought up to 
+\qtyrange{600}{750}{\celsius} for \qtyrange{4}{24}{\hour} after which the 
+container is purged with an inert gas opened in an inert, dry atmosphere to 
+collect the purified salt \cite{rev42}.
+
 \subsubsection{Chemistry}
 \label{sec: nf4hf2 chemistry}
+
+Above \SI{230}{\celsius}, \ch{NH4HF2} decomposes via the reaction shown in 
+\Cref{eq: nh4hf2 decomposition}. \cite{rev16} \par
+
+\begin{equation}
+    \ch{NH4HF2 -> NH3 + 2 HF} \label{eq: nh4hf2 decomposition}
+\end{equation}
+
+The \ch{NH3} produced in this reaction is inert relative to the salt and its 
+impurities; however, the \ch{HF} produced reacts in the same manner as what 
+was shown in \Cref{sec: nf3 chemistry and thermodynamics}. Since this method 
+relies on the produced \ch{HF} to react with the salt’s impurities, its 
+thermodynamics are the same as those for \ch{HF} shown in 
+\Cref{tab: beo nf3 beo hf table,tab:
+li2o nf3 li2o hf table,tab:
+beoh2 nf3 beoh2 hf table,tab:
+lioh nf3 lioh hf table,tab:
+na2o nf3 na2o hf table,tab:
+k2o nf3 k2o hf table,tab:
+naoh nf3 naoh hf table,tab:
+koh nf3 koh hf table,tab: 
+uo2 nf3 uo2 hf table,tab:
+c nf3 c hf table,tab:
+sic nf3 sic hf table}.
+\par
+
+This method will not purify the salt to the same extent as \ch{HF-H2} sparging. 
+\ch{HF-H2} sparging will bring the oxygen content down to $\sim\SI{80}{ppm}$ 
+\cite{rev16,rev30}, 
+while \ch{NH4HF2} baking will only bring oxygen content down to 
+$\sim\SI{200}{ppm}$ \cite{rev43}, 
+with all other contaminants being at about equal concentrations for both 
+methods, besides sulfates which require a reaction with \ch{H2} as shown in 
+\Cref{eq: OH to H2O}
+, meaning \ch{NH4HF2} baking will not remove this contaminant. 
+This shorter extent of purification could be explained by a number of
+factors, but I believe that this is likely due to a lack of replenishment 
+of the \ch{HF} supply for the reaction. \par
 
 \subsubsection{Kinetics}
 \label{sec: nf4hf2 kinetics}
 
+This method can reach \SI{200}{ppm} oxygen much faster than \ch{HF-H2} 
+sparging. While no studies into the kinetics of this method could be found, 
+a rough time of \SI{24}{\hour} was claimed to be sufficient to reach 
+\SI{200}{ppm} \cite{rev42}, \cite{rev43}. As shown in 
+\Cref{fig: oxygen vs time}, Zong et al. found that oxygen content was 
+around \SI{300}{ppm} after 24 hours for an optimized setup \cite{rev30}. 
+This may be due to increased contact between the \ch{HF} and oxygen 
+contaminants in \ch{NH4HF2} baking due to the 
+dispersal of \ch{NH4HF2} in the salt prior to heating as opposed to the 
+limited diffusion resulting from \ch{HF-H2} bubbling through the molten salt.
+\par
+
 \subsubsection{Reagent Properties and Hazards}
 \label{sec: nf4hf2 hazards}
+
+At room temperature, \ch{NH4HF2} takes the form of white crystals. This 
+allows it to be ground and mixed with salt eutectics at room temperature and 
+loaded into the reaction vessel all at once. While dangerous if ingested or 
+absorbed through the skin it presents no other harm in its solid state. 
+Primary hazards associated with this method are due to the \ch{HF} produced 
+upon heating of the \ch{NH4HF2}. Treatment of reaction effluent is the same 
+as \ch{HF-H2} sparging. Corrosion of the reaction vessel is less of a 
+concern with this method than with \ch{HF-H2} sparging due to the lower 
+concentration of \ch{HF} and the reduced exposure time. While less effective 
+than the aforementioned methods this method allows for a simpler reactor
+setup and drastically decreased risk to health. \par
 
 \subsection{Electrolytic Purification}
 \label{sec: electrolytic purification}
 
+A separate method of purification can be found in electrolysis of the 
+molten salt mix. This method does provide a couple of advantages versus 
+chemical purification. Electrolytic purification is both faster and less 
+wasteful than chemical purification and releases considerably less toxic 
+off gas. It is, however, less complete than chemical purification, with 
+oxide concentrations only going as low as $\sim\SI{200}{ppm}$ with just 
+electrolysis \cite{rev44}. It also cannot remove all metal impurities 
+from the salt. \ch{Cr} in particular will remain in solution as \ch{CrF2}.
+\par
+
+As stated previously, the first experiments for using electrolysis to 
+purify molten fluoride salt were done as part of the ARE in late 1954 
+\cite{rev5}. They used an electrolytic cell containing a graphite rod
+anode and a nickel mesh cathode to help drop the fluorination potential 
+of salts by reducing dissolved metal fluorides to their metallic form 
+and releasing fluorine gas, which would be converted to hydrogen
+fluoride by reacting with a padding hydrogen blanket above the salt 
+\cite{rev5}. \Cref{eq: metal electro reduction,eq: hydrogen}
+show the reaction pathway. This method was introduced as a faster way of 
+reducing the fluorination potential of the salt compared to pure hydrogen 
+sparging and showed promise but was never introduced into the production 
+process and quickly dropped for unspecified reasons. This could be due to 
+issues found with the method, a lack of want to modify existing purification 
+equipment at the time, or advantages associated with using reducing agents  
+to help accelerate fluoride reduction instead. \par
+
+\begin{equation}
+    \ch{MeF2_{(eq)} ->[electrolysis] Me_{(s)} + F2_{(g)}} 
+    \label{eq: metal electro reduction}
+\end{equation}
+
+\begin{equation}
+    \ch{H2 + F2 -> 2 HF} 
+    \label{eq: hydrogen}
+\end{equation}
+
+Experiments by Wang et al. have re-opened the possibility of using 
+electrolytic means to purify molten salts \cite{rev44}. The results of 
+their experiments showed that a \ch{C}, \ch{Ni} electrode could be used to 
+reduce the oxide concentration in an unspecified amount of FLiNaK down from 
+\SI{1000}{ppm} to around \SI{200}{ppm} in a matter of \SI{20}{\hour}hr. 
+They also showed a reduction in several metal contaminants. \par
+
+Very recently, a molten fluoride salt electrolytic purification experiment 
+was performed by Zuo et al. \cite{rev27}. Their experiment focused on 
+improving the performance of electrolytical purification methods through 
+the addition of a continuous hydrogen sparge to the electrolytic setup. 
+Their cell design is shown in 
+\Cref{fig: electrocell}
+nickel tube of flowing hydrogen gas is lowered into a nickel crucible filled
+with molten salt, and electrodes are connected to the tube and crucible, 
+effectively creating a \ch{H^+}/\ch{H2}, \ch{Ni} electrode instead of the 
+\ch{C}, \ch{Ni} electrode used during the ARE experiments. A nickel foil 
+was used to increase the surface area of the nickel electrode. This setup 
+was able to get an unspecified amount of FLiNaK salt down below 
+\SI{100}{ppm} of oxygen contaminants in just a couple of hours. 
+The hydrogen sparge would also cause Ni and Fe impurities to be somewhat 
+reduced out of solution. Issues with scaling up this process were brought 
+up, namely that the current through the salt is low, presenting a 
+potential size limit for a given voltage. \par
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{./assets/review/figures/electrocell.jpg}
+    \caption{Molten salt electrolytic purification vessel design used by Zuo el al.}
+    \label{fig: electrocell}
+\end{figure}
+
+Although no prior studies had been performed to determine the effectiveness
+of electrolytic purification of a fluoride salt, there had been studies
+undertaken and methods developed for purification in some chloride salts
+\cite{rev32,rev45,rev46}. Ding et all have produced complex, proven
+electrolytic cells for the monitoring and purification of \ch{Mg} bearing
+chloride salts \cite{rev45}. A diagram of the purification setup is shown in
+\Cref{fig: chloride electrocell}. By using a sacrificial \ch{Mg} anode
+and a \ch{W} cathode, hydroxides in the melt were reduced to \ch{MgO},
+and the concentration of corrosive hydroxides in the melt was reduced by
+\SI{93}{\percent} in a matter of a few minutes. The kinetics of this type
+of electrochemical cell are limited by the buildup of a passivation layer
+on the cathode. This effect can be mitigated by substituting the \ch{W}
+used in the cathode for \ch{Mg} and using alternating voltage to
+periodically swap the direction of electron flow \cite{rev46}.
+\par
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.6\textwidth]{./assets/review/figures/chloride electrocell.pdf}
+    \caption{Schematic of assumed reactions and observed phenomena on the
+        \ch{W}-cathode and \ch{Mg} anode in 
+        the electrochemical purification
+    using pulsed over-potential.}
+    \label{fig: chloride electrocell}
+\end{figure}
+
+The limited amount of research into this area presents a challenge and an
+opportunity. From the beginning, electrolytic purification setups have
+always been modifications to existing hydrofluorination setups so modifying
+existing designs would likely not be difficult. Plenty of research exists
+for using electrolytic salts to purify other metals, but little exists for
+purifying the salts themselves. \par
+
 \section{Additional Steps}
 \label{sec: additional steps}
+
+Although hydrofluorination is the main step for purifying molten fluoride
+salts, additional refinement is necessary to ensure the highest purity.
+Corrosion during the hydrofluorination process will cause structural
+materials to become fluorinated and dissolve into the molten salt mix.
+Some \ch{HF} will also be dissolved into the salt and will need to be
+removed to reduce the corrosive properties of the salt mix. \par
 
 \subsection{Continued H addition}
 \label{sec: continued h addition}
 
-\pagebreak
+A common method of continuing to sparge the mix after fluorination with
+just \ch{H2} gas will reduce some of the less favorable structural metal
+fluorides from the mix. The reduced metal can be left to settle to
+the bottom of the molten salt mix and then be decanted off or left
+suspended in the mix and filtered. This can take an additional several
+dozen hours depending on just how much of the reaction or storage
+vessel is corroded away into the salt. For Kelleher et al. this step
+took \SI{36}{\hour} as their salt had been highly contaminated after
+years in a metal storage vessel \cite{rev16,rev29}. \par
+
+An alternative means of adding hydrogen to the system is in the form
+of metal hydrides, notably lithium hydride (\ch{LiH}). This is a more
+efficient means of adding hydrogen to the system, as hydrogen
+concentrations in the melt can be as much as \SI{4}{\degree} of
+magnitude higher with \ch{LiH} powder additions than with \ch{H2} gas
+sparging \cite{rev47}. This allows the salt to be brought to a highly
+reducing state, to the point that salt constituent metals, like
+\ch{Be} in the case of FLiBe or potentially \ch{K} and \ch{Na} in the
+case of FLiNaK (no research data found only theoretical), will reduce
+to their metallic forms, and form molten pools on the surface of the
+salt, as shown in \Cref{fig: lih ellingham}. \cite{rev48} \par
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.6\textwidth]{./assets/review/figures/lih_ellingham.png}
+    \caption{Ellingham diagram of the expected redox window from Carotti et al \cite{rev48}.}
+    \label{fig: lih ellingham}
+\end{figure}
+
+This could cause drastic changes in the relative concentrations, bringing the
+salt mix away from the eutectic, and has been shown to cause shorting in
+electrochemical processes performed in the salt \cite{rev48}. If properly
+accounted for however, this could be a practical alternative in
+purification processes that avoid any gas sparging. \par
 
 \subsection{Reducing metal additions}
 \label{sec: reducing metal additions}
 
-\pagebreak
+The use of a small amount of a strong reducing metal such as \ch{Be} or
+\ch{Zr} can be used to effectively reduce out the \ch{HF} by forming
+\ch{BeF2} or \ch{ZrF4}. This can also be used to reduce out less favorable
+structural metal fluorides \cite{rev16,rev21,rev29}. \ch{Cr} in particular
+will not reduce out through just hydrogen sparging. This is best done in
+combination with \ch{H2} sparging since the flow of gas through the salt
+will have a mixing effect. This method also has the adverse effect of
+adding contaminants to the salt. This is less of an issue for
+FLiBe since adding \ch{Be} metal will just create more \ch{BF2} for the
+solution, however the change in concentration still needs to be considered.
+The reduced metal can be left to settle to the bottom of the
+molten salt mix and be decanted off or left in suspension and filtered off.
+\par
 
 \subsection{Filtration}
 \label{sec: filtration}
 
-\subsection{Corrosion in Structural Materials}
+As stated previously the need to wait for reduced metals to settle to the
+bottom of the molten salt mix can be avoided through filtration during
+hot transfer. This was the method used by the MSRE \cite{rev21} and
+Kelleher et all \cite{rev16,rev29}. This method is more effective at removing
+reduced structural metal particulates from the salt mix than decanting;
+however, it does come with one major issue: clogging. The small pore
+size necessary to remove metal particulates and high freezing point of
+the salts makes clogging a hard issue to avoid. This was a frequent and
+persistent issue for both the MSRE \cite{rev21} and Kelleher et al.
+\cite{rev16,rev29}. Because of this heat trace and maximizing filter
+surface area are both necessary additions. Woven mesh filters are also
+preferable over sintered filters. \par
+
+\section{Corrosion in Structural Materials}
 \label{sec: corrosion}
+
+The highly corrosive properties of both the hydrofluorinating reagents and
+the molten salt itself requires a balance between process safety and cost
+management. High nickel alloys are far more resistant to corrosion by both
+than stainless steels; however, they are also far more expensive
+\cite{rev49}. This means that for practical applications, an acceptable
+rate of corrosion needs to be established. \par
 
 \subsection{Corrosion Due to Hydrofluorinating Reagents}
 \label{sec: corrosion due to hf}
 
+The corrosion mechanism of structural metals by HF is shown by
+\Cref{eq: metal oxidation}
+. Corrosion occurs by the fluorination of pure metals to metal fluorides,
+which can be more easily dissolved into the salt solution.
+Both \ch{HF-H2} sparging and \ch{NH4HF2} baking use \ch{HF} as the primary
+hydrofluorinating agent. Reversing the directions of
+% Equations 9, 10, and 13 TODO
+\Cref{eq: O2 to H2O,eq: OH to H2O,eq: S to H2S}
+also show that \ch{HF} is produced as a by-product of salt contamination.
+\Cref{fig: fluorides gibbs energy}
+shows the Gibbs free energy of formation for various elemental metal
+fluorides.
+\par
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.6\textwidth]{./assets/review/figures/fluorides gibbs energy.pdf}
+    \caption{Gibbs Free Energy of Fluorination of Various Elemental Metals \cite{rev33}.}
+    \label{fig: fluorides gibbs energy}
+\end{figure}
+
+\ch{NF3} corrodes structural metals via the same mechanism as
+\ch{HF}: fluorination; however, as stated previously, it is more aggressive
+than \ch{HF} at elevated temperatures \cite{rev31}. No corrosion data exists
+for \ch{NF3} or any analogous gas, such as fluorine, near expected process
+temperatures. This is likely due to the extreme health risks and financial
+costs associated with running such an experiment. \par
+
+Because their fluorination potential is higher than that of \ch{Ni},
+\ch{Cr} and \ch{Fe} are more easily corroded in a fluorinating environment
+and should therefore be reduced as much as possible. \ch{Cr} has an especially
+high fluorination potential, causing it to be targeted for attack first
+(if present) for most applicable alloys
+\cite{rev24,rev33,rev34,rev38,rev50,rev51}.
+This high fluorination potential can be and counteracted by diluting the
+fluorinating agent with a reducing gas, namely \ch{H2}. The effects of a high
+fluorination potential can also be reversed by dropping the fluorination
+potential of the salt mix, by removing excess fluorine ions from
+the mix, using a reducing agent such as an active metal or \ch{H2} sparging.
+\par
+
 \subsection{Embrittlement Due to Hydrogen}
 \label{sec: embrittlement}
+
+Although not a direct contributor to corrosion, exposure to \ch{H2} can 
+cause embrittlement by infiltration into the metal’s grain boundaries. 
+\ch{H2} can build up along grain boundaries, exerting pressure on and
+deforming the grains to reduce ductility and strength. This has the added 
+effect of increasing the size of grain boundaries, allowing for 
+increased attack by corrosive agents. For annealed metals, increasing the 
+\ch{Ni} content tends to increase resistance to hydrogen ingress
+affecting structural strength; however, for cold worked metals this trend 
+is reversed \cite{rev52,rev53}. Increasing the Ni content also causes an 
+increase in intragranular fracture due to hydrogen embrittlement, 
+as depicted in \Cref{fig: h2 embrittlement}. \par
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.6\textwidth]{./assets/review/figures/h2 embrittlement.jpg}
+    \caption{Microstructure of annealed 316L stainless steel before (a) and after (b) 20 hr of cathodic
+hydrogen charging compared to annealed Hastelloy C-276 before (c) and after (d) \SI{20}{\hour} of cathodic
+hydrogen charging. \cite{rev53}}
+\label{fig: h2 embrittlement}
+\end{figure}
+
+This increase in crack size and frequency in higher Ni alloys would likely allow for more surface to be
+attacked by corrosive agents; however, the higher Ni content likely more than offsets this through its
+higher fluorination resistance. \par
 
 \subsection{Corrosion Due to Molten Salt}
 \label{sec: corrosion due to salt}
@@ -732,6 +1040,8 @@ aforementioned costs compared to \ch{HF}.
 
 \subsection{Steels}
 \label{sec: steels}
+
+\pagebreak
 
 \subsection{Copper}
 \label{sec: copper}

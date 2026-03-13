@@ -11,6 +11,7 @@ main.bcf
 main.blg
 main.toc
 main.run.xml
+main.synctex*
 *.synctex
 _minted-main/
 svg-inkscape/
