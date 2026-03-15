@@ -1,0 +1,131 @@
+% ============================================================================
+% Title:        Materials compatibility
+% Author: Nathaniel Thomas
+% Affiliation:  Texas A&M University, Department of Nuclear Engineering
+% Email:        nathaniel@tamu.edu
+% Date Created: 3/15/2026
+% Version:      1.0
+%
+% Description:
+%   A .tex source file discussing materials compatability in molten salt
+%   corrosion.
+%
+% =============================================================================
+
+\section{Compatibility of Candidate Structural Materials}
+\label{sec: compatability of candidate}
+
+As stated previously, pure molten fluoride salts have very little to no
+corrosive effects. This is due to the Gibbs energy of fluorination being
+more favorable for the salt components (i.e. \ch{K}, \ch{Li}, \ch{Na},
+and \ch{Be}) than for structural materials (i.e. \ch{Fe}, \ch{Cr},
+\ch{Ni}, etc.). However, the presence of contaminants, either through
+environmental contamination or fission products, will skew the redox
+potential of the salt such that corrosion of structural materials
+will occur. While the purification methods listed above can be used
+to minimize the concentration of environmental contaminants (and even
+fission products in the case of \ch{NF3}), they only work so well,
+making selection of proper materials necessary. \par
+
+\subsection{Ni Alloys}
+\label{sec: ni alloys}
+
+The simplest thing to do is select materials whose fluorination potential
+is as far from the salt components as possible. To this end alloys made
+of primarily \ch{Ni} or \ch{Mo} are practical, since they are the
+materials that have a high Gibbs energy of fluorination and can be easily
+welded. Since \ch{Ni} is the cheaper of the two metals it will be focused
+on \cite{rev49}. While pure \ch{Ni} (Ni-200) would likely be the material
+of choice from a pure chemistry standpoint, its poor structural strength
+at process temperatures ($>\SI{500}{\celsius}$) makes its use limited.
+The MSRE used pure \ch{Ni} liners in their purification vessels, and
+although these corroded away when fluorine gas was used to purify used
+salt, the concept is still sound \cite{rev21}. It simply requires
+more active checking the liner between runs. Kelleher et. all used
+a pressurized outer shell made of steel to add structural strength to
+their Ni-200 purification vessel \cite{rev29}. \par
+
+Ni alloy Hastelloy N (also known by INOR-8) is another appealing option
+that has a lower but comparable corrosion resistance to Ni-200, due to
+its high \ch{Ni} and \ch{Mo} content, with increased structural strength due
+to small concentrations of \ch{W}, \ch{Fe}, and \ch{Cr} \cite{rev50,rev51}.
+Hastelloy N was specifically made for the MSRE and was used as the sole
+structural material in the MSRE loop \cite{rev51}. It showed almost no
+corrosion across the entire run \cite{rev51}. Experimental data obtained by
+Koger predicted the corrosion rate of Hastelloy N by dynamic FLiBe to be at
+around \SI{0.02}{\milli\meter\per\year} \cite{rev36}. Experiments by Sandhi
+et al. showed Hastelloy N to have a high resistance to corrosion by static,
+molten FLiNaK salt \cite{rev37}. In their experiments, Hastelloy N
+apparently suffered less surface corrosion, had a lower surface concentration
+of \ch{Cr}, half the depth of surface penetration, and had a positive mass
+change after spending \SI{100}{\hour} in \SI{700}{\celsius} FLiNaK, when
+compared to stainless steel \cite{rev37}. Hastelloy N’s use in a purification
+vessel is largely unproven, however its resistance to anhydrous \ch{HF} and
+molten salts has been explored, and it proved to have a low rate of corrosion
+compared to other high Ni alloys with a largely linearly changing corrosion
+rate with temperature \cite{rev37,rev50,rev51}. \par
+
+\subsection{Steels}
+\label{sec: steels}
+
+Steels due to their high structural strength at high temperatures and lower
+cost should be at least considered. The main issue with most commercial
+stainless steels is their high \ch{Cr} content, but \ch{Fe} is also more
+easily fluorinated than \ch{Ni} or \ch{Mo}. If salts are sufficiently
+purified then corrosion can be mitigated in a molten salt loop, although
+as low of a chromium content as is possible is preferred. Steels however
+cannot be used for creation of a purification vessel that utilizes \ch{HF}
+or any stronger fluorinating agent as it will corrode too quickly.
+Stainless steels can handle low temperature \ch{HF}, but they will not
+handle it at process temperatures \cite{rev50}. For stronger fluorinating
+agents like fluorine gas or higher temperature \ch{NF3}, all steels are
+considered to have an unacceptable rate of corrosion. \cite{rev50} \par
+
+\subsection{Copper}
+\label{sec: copper}
+
+A material that also historically has showed much promise is copper.
+When scaling up to meet the high demands for purified salts, the
+ARE swapped out their nickel reaction vessels for stainless steel vessels
+lined with copper \cite{rev6}. This vessel design remained in intermediate
+use with nickel lined vessels through to the conclusion of the MSRE
+\cite{rev10,28}. They later made sampling vessels out of copper as well.
+During the MSRE, when the nickel dip tubes corroded away, likely due to
+the high sulfur content of received salt, attempted solutions involved
+coating the nickel parts with copper \cite{rev28}. After the MSRE, the use of
+copper in fluorination appears to have stopped, with studies into its
+corrosion in molten salt environments only just recently resuming
+\cite{rev60}. Despite this, a recent study by Weinstein et. all has shown
+copper to have superior corrosion resistance with inferior chromium diffusion
+resistance to nickel \cite{rev60}. Further studies into this may become
+available soon. The main issue with this as a material is that, while copper
+is highly resistant to dry fluorinating agents, it is readily corroded and
+dissolved by hydrofluoric acid, so moisture must be purged readily to prevent
+serious corrosion \cite{rev6}.
+
+\subsection{Carbon}
+\label{sec: carbon}
+
+Although not mechanically useful, glassy carbon, graphite, and \ch{SiC}
+do make for excellent crucible/liner materials in a reaction vessel,
+since carbon is chemically inert to all but the harshest fluorinating
+compounds (such as \ch{F2} and \ch{NF3}) \cite{rev31,rev61}. The main
+issues of using carbon structures are that salt can diffuse into the
+graphite \cite{rev62} and the increase in the corrosion of metals used
+in other structures \cite{rev63,rev64}. Molten salt impregnation of
+graphite is a well-documented phenomenon first observed in early ARE
+materials tests \cite{rev61,rev65}. Depending on the pore size and void
+fraction of the graphite, salt impregnation can cause serious structural
+damage to the graphite via cracking, particularly during the frequent
+cooling and heating cycles of a purifier \cite{rev62}. This makes glassy
+carbon the preferred material to use over even high-quality graphite.
+The increase in salt corrosivity due to graphite contamination is a
+less understood phenomenon however it was discovered to occur in the MSRE
+test loops \cite{rev63}. The exact transport mechanism of this phenomenon
+is unknown and is currently under study; however, it is understood that
+the carbon and metal particles do diffuse through the salt to form
+carbide layers on both surfaces and that the formation of carbide
+layers on metal surfaces is normally prevented by protective oxide layers
+on the metals, which are destroyed in a molten salt or fluorinating
+environment \cite{rev64}. These carbide layers can flake off and expose
+fresh metal surfaces to be further carburized. \par

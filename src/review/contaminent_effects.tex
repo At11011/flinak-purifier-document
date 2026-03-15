@@ -1,0 +1,105 @@
+% ============================================================================
+% Title: Corrosion in structural materials
+% Author: Nathaniel Thomas
+% Affiliation:  Texas A&M University, Department of Nuclear Engineering
+% Email:        nathaniel@tamu.edu
+% Date Created: 3/15/2026
+% Version:      1.0
+%
+% Description:
+%   A .tex source file descripbing the effects of contaminants on molten
+%   salt corrosion.
+%
+% =============================================================================
+
+\section{Effects of Contaminants of Molten Salt Performance}
+\label{sec: contaminants}
+
+The presence of contaminants in a molten salt mix causes a series of
+undesirable reactions to occur, overall decreasing the performance of the
+salt. Among these reactions, one of note is the acceleration of corrosion of
+structural metals in direct contact with the salt. Although the effects of
+contaminants on salt are not sustained, they can have immediate pronounced
+effects on corrosivity \cite{rev23}. \par
+
+\subsection{Oxygen}
+\label{sec: oxygen}
+
+Due to their relatively high concentrations and their increased time to remove,
+the most concerning contaminants of note are oxides and hydroxide
+compounds \cite{rev18}. Since every constituent fluoride salt used in both
+FLiBe and FLiNaK is hydroscopic, water from the air will be absorbed into the
+salt. Water reacts with the fluorine ion in fluoride salts to form
+\ch{HF}, metal
+hydroxides, and metal oxides. In salts containing \ch{UF4}, a high enough oxide
+concentration was found to cause \ch{UO2} to fall out of solution and collect in
+lines, creating hot spots \cite{rev10}, \cite{rev21}. This issue was
+minimized by MSRE scientists through the addition of up to \SI{5}{\percent}
+\ch{ZrF4} to the salt mixture to
+act as a thermodynamically favored oxide buffer \cite{rev21}. The
+\ch{HF} formed from the reaction between water and salt can corrode structural
+materials such as \ch{Cr} and \ch{Fe} through fluorination. Despite this,
+Aia et al., found that high enough concentrations of oxides in molten FLiNaK,
+in excess of \SI{1000}{ppm}, can
+actually retard the corrosion of 316SS \cite{rev24}. A high oxide concentration
+was found to change the corrosion products from \ch{Fe3O4} and \ch{Cr2O3} to
+\ch{CrLiO2}, which formed a more stable passivation layer between the salt and
+metal \cite{rev24}. \par
+
+Originally, oxygen concentration was measured by reacting salts with an
+aggressive fluorinating agent, and measuring the amount of oxygen
+released \cite{rev25}. While attempts using \ch{KBrF4} were successful at
+measuring up to \SI{98}{\percent} of the oxygen content, aggressive
+fluorinating agents present multiple safety issues, as will be discussed in
+Section 4 \cite{rev25}, \cite{rev26}. Cyclic voltammetry can be used to
+measure a change in the amount of oxygen ions \cite{rev27}; however, since the
+exact forms of oxides in the salt are unknown, it is unknown if this method
+is sufficient to accurate. Recently, combustion analysis became the standard
+for determining oxygen concentration. Combustion analysis works by melting
+the salt in a graphite crucible at a high enough temperature such that the
+oxygen in the salt will react with the crucible to form \ch{CO}, which can
+then be converted to \ch{CO2} and measured via thermal conductivity
+detectors \cite{rev26}. \par
+
+\subsection{Sulfur}
+\label{sec: sulfur}
+
+Sulfide and sulfate contaminants encourage increased corrosion by altering
+redox potential. Sulfur compounds can attack noble metals like nickel and
+form \ch{NiS}, which can then be attacked by fluoride ions to form \ch{NiF},
+which will dissolve into the salt solution, corroding loop structures
+\cite{rev10,rev21}. Although less abundant in constituent salts used
+today, sulfur was a major contaminant of consideration for MSRE operations,
+due to large amounts of it being present in their \ch{LiF} supply
+\cite{rev10,rev28}. Sulfates and sulfites also decompose at high
+temperatures (\qtyrange{600}{1000}{\celsius}), releasing more oxygen
+into the salt \cite{rev29}.  Sulfur contaminants tend to be removed
+faster and more completely than oxygen contaminants \cite{rev30}. A standard
+method of measuring sulfur content was not found. This is likely due
+to the lack of a need for one. Sulfur is completely removed from the
+system long before oxygen for all of the purification methods
+discussed. \cite{rev27,rev30,rev31,rev32}.\par
+
+\subsection{Structural Metals}
+\label{sec: structural metals}
+
+Structural metal contaminants, such as fluorinated \ch{Cr}, \ch{Fe}, and
+\ch{Ni}, affect the nuclear cross section of the salt, and can contribute to
+loop clogging by deposition to pure metals, and can increase corrosion rates
+\cite{rev10,rev29}. Molten fluorides prefer to attack \ch{Cr} over
+\ch{Ni} or \ch{Fe} \cite{rev23,rev33,rev34,rev35,rev36,rev37}.
+Because \ch{Cr} is the preferred metal to attack, any \ch{Ni} or \ch{Fe} in the
+salt as fluorides will shift the redox potential and cause \ch{Cr} to be
+further attacked through substitutive fluorination \cite{rev29}. An excess of
+\ch{Cr} in the salt can cause it to plate out of solution onto other
+metal surfaces, diffusing into those surfaces and weaking the metals resistance
+to future corrosion when the redox potential of the salt changes again
+\cite{rev29}. Outside of salt corrosion, metal fluorides are often introduced
+by the oxidation of structural metals alloy constituents by contact with
+strong fluorinating agents \cite{rev21,rev29,rev38}. These
+metal fluoride contaminants then dissolve into the molten salt mix to disrupt
+its chemical equilibrium. The concentration of metal impurities can be easily
+measured through inductively coupled plasma (ICP) spectroscopy \cite{rev26}.
+Just like with oxygen, cyclic voltammetry can also be used to determine the
+metal concentration relative to a standard but lacks the ability to give
+precise values \cite{rev27,rev39} \par
