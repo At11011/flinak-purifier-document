@@ -1,0 +1,87 @@
+% =============================================================================
+% Title:        Gas tubing system
+% Author:       Nathaniel Thomas
+% Affiliation:  Texas A&M University, Department of Nuclear Engineering
+% Email:        nathaniel@tamu.edu
+% Date Created: 3/16/2026
+% Version:      1.0
+%
+% Description:
+%   A .tex source file describing the tubing system of the purifier.
+%
+% =============================================================================
+
+\section{Tubing system}
+
+This section describes the tubing system built to introduce gases into the
+FLiNaK purifier. In addition, it also describes the scrubber system built to
+safely capture and dispose of any residual \ch{HF} that was not
+reacted during the sparging process.
+A diagram of the gas mixing system is shown in \Cref{fig: gas mixing
+diagram}. \par
+
+% TODO: Find a diagram of this system
+\begin{figure}
+  \centering
+  % \includegraphics[width=0.6\textwidth]{}
+  \caption{A diagram of the gas mixing system for the FLiNaK purifier.}
+  \label{fig: gas mixing diagram}
+\end{figure}
+
+\subsection{Gas sparging system}
+
+The gas sparging system is meant to introduce gas into the
+molten salt, resulting in the chemical reactions to enable
+purification, as described in \Cref{sec: hf sparging}.
+There are three gases used in total:
+
+\begin{enumerate}
+  \item Hydrogen gas
+  \item Hydrofluoric acid
+  \item Argon gas
+\end{enumerate}
+
+Each of the gases provide a different purpose for purification.
+Argon removes residual water, hydrofluoric acid converts metallic
+oxides to water and metallic fluorides, and  hydrogen reduces
+metallic impurities in the salt into their elemental forms, causing
+them to fall out of solution and be filtered out during the transfer
+process. An image of the gas feed system is shown in
+\Cref{fig: gas control system,fig: gas control inside}.
+\footnote{Note that the filtration step has been removed in
+  the current iteration of the design in order to mitigate issues
+  during the transfer process. These elemental metallic impurities
+will have to be filtered out separately.} \par
+
+% TODO: Find or make diagram of this system
+\begin{figure}
+  \centering
+  \input{./src/d&c/tubing/gas_control_system.tex}
+  \caption{An annotated image of the gas mixing system outside of the
+  fume hood (11/22/2022)}
+  \label{fig: gas control system}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \input{./src/d&c/tubing/gas_control_inside.tex}
+  \caption{An annotated image of the gas mixing system inside of the
+  fume hood (11/22/2022)}
+  \label{fig: gas control inside}
+\end{figure}
+
+\subsection{Scrubber system}
+
+This system is designed to safely dispose of the residual gases from the
+gas sparging system. The scrubber gas is collected from the reaction chamber
+following purification. There is a dedicated port on the top of the reaction
+chamber. This port then feeds into a tube that runs to a solid scrubber
+containing calcium oxide. This neutralizes some of the hydrofluoric acid,
+reducing the load on the wet scrubber.
+\footnote{This tube has a tee that feeds
+into the RGA system, enabling analysis of the scrubber gas content.}
+Following the dry scrubber, the line feeds into a KOH wet scrubber, where
+the remaining HF is neutralized.
+\par
+
+% TODO: Include an image of the scrubber solution.

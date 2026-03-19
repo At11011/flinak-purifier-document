@@ -1,0 +1,42 @@
+% =============================================================================
+% Title:        Gas control inside
+% Author:       Nathaniel Thomas
+% Affiliation:  Texas A&M University, Department of Nuclear Engineering
+% Email:        nathaniel@tamu.edu
+% Date Created: 3/18/2026
+% Version:      1.0
+%
+% Description:
+%   A .tex source file showing an annotated image of the FLiNaK purifier gas
+%   control tubing inside the purifier.
+%
+% =============================================================================
+
+\begin{tikzpicture}
+
+  % Place image as a node
+  \node[anchor=south west, inner sep=0] (img) at (0,0)
+  {
+    \includegraphics[width=10cm]{/home/nathaniel/Code/LaTeX/Research/flinak-purifier-document/assets/pictures/gas
+    control inside.jpg}
+  };
+
+  % Define coordinate system relative to image
+  \begin{scope}[x={(img.south east)}, y={(img.north west)}]
+
+    % Example annotations (coordinates are now 0–1 normalized)
+    \draw[->, red, thick] (0.5,0.7) -- (0.63,0.8)
+    node[red,pos=-0.3,above] {Moisture filter};
+
+    \draw[->, red, thick] (0.5,0.5) -- (0.63,0.5)
+    node[red,pos=-0.3,above] {Ar flow controller};
+
+    \draw[->, red, thick] (0.6,0.35) -- (0.6,0.23)
+    node[red,pos=-0.1,above] {Ar flow controller};
+
+    \draw[->, red, thick] (0.3,0.25) -- (0.43,0.25)
+    node[red,pos=-0.3,above] {Ar purge valve};
+
+  \end{scope}
+
+\end{tikzpicture}

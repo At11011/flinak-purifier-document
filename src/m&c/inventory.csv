@@ -1,0 +1,98 @@
+,,,,,,,,,,,,,,
+Rough Total,"$102,554.68",,,,,,,,,,,,short,1-2 days
+,,,,,,,,,,,,,medium,weeks
+Equipment,Brand,Model,Type,Cost,Quantity,,Extra Comments,Posession Status,Used in Build,Lead Time,Company Hassle,,long,month
+Non-corrosive Mass Flow Controller,Aalborg,GFC17A-BAL6-A0,electronic,$941.00,2,,"for H2: THERMAL MFC 316 SS PTFE/KALREZ 1/4""COMPR FTG LCD DISPLAY 0-5VDC/4-20MA Hydrogen H2 0-2 STD L/MIN STD METERING PRESS [14.7PSIA] STD TEMP [21.1øC/70øF] 
+for Ar: THERMAL MFC ALUMINUM BUNA-N 1/4""COMPR FTG LCD DISPLAY 0-5VDC/4-20MA Argon Ar 0-2 STD L/MIN STD METERING PRESS [14.7PSIA] STD TEMP [21.1øC/70øF]",arrived,yes,long,no,,very long,2 months+
+Corrosive Mass Flow Controller,Teledyne Hastings,HFC-D-302B(H),electronic,"$1,655.00",1,,"Standard output, fittings, display, working pressure, & calibration type",arrived,yes,long,no,,,
+Norman Filters Woven Mesh Filter U-91560,Norman Filters,4325TG-10V,piping,"$1,456.00",1,,"316SS mesh; for 1/2"" tube",arrived,yes,very long,custom part,,,
+"1/4"" C-276 Ball Valves",Swagelok,HC-62TS4,piping,"$2,866.00",2,,,arrived,yes,very long,no,,,
+"1/2"" C-276 Ball Valves",Swagelok,HC-63TS8,piping,"$3,727.00",2,,,arrived,no,very long,no,,,
+Tube Furnace with Setpoint Control,ATS,3110-8.25-16-16,electronic,"$6,738.00",1,,"Tube type construction with stainless steel shell.
+-Dimensions: 8.25 in. I.D. x 16 in. O.D. x 13 in. Long
+-Elements: Kanthal A1, embedded windings.
+-Furnace Temperature Rating: 800 deg. C.
+-Single Zone Construction, 10 in. heated length
+-Total Power: 5350 Watts/23.2 amps @ 230 VAC, 1Ph, 60 Hz.
+-End Disk: 1.5 in. thick, bore 7 in. both ends
+-End Caps: 1.5 in. thick, bore 7 in. both ends
+-(1) Thermocouple Port: Located midlength of heated zone
+-(1) Thermocouple, Type K, with ceramic insulator
+-(1) Thermocouple, Type K, connector with mounting bracket
+-(1 set) Support Brackets for vertical mount",arrived,yes,very long,custom part,,,
+"1/2"" C-276 Tubing",Swagelok,HC-T8-S-049-20P,piping,$47.34,20,ft,,arrived,yes,long,no,,,
+"1/4"" C-276 Tubing",Swagelok,HC-T4-S-035-20P,piping,$25.36,20,ft,,arrived,yes,long,no,,,
+2L PTFE Scrubber Vessel,VWR,89026-028,scrubber,$183.95,1,,,arrived,no,medium,yes,,,
+5L PTFE Scrubber Vessels,VWR,89026-020,scrubber,$299.59,2,,,arrived,yes,medium,yes,,,
+"1/4"" ID PTFE Tubing",VWR/Thermo Scientific,63014-713,scrubber,$4.81,25,ft,,arrived,no,medium,yes,,,
+HF Fumes Detector,VWR/GfG Instrumentation,76334-718,electronic,"$1,468.45",2,,"Range: 0-10 ppm, Resolution: 0.1 ppm",arrived,yes,long,yes,,,
+HF Gas Cylinder,Linde,UN1052,gas,"$2,702.84",1,,"4.5 L (3.8kg) filled, 30"" tall with valve, 4.5"" diameter",arrived,yes,long - very long,supply issues,,,
+Ar Gas Cylinder,Brazos Welding ,,gas,,,,,arrived,yes,short,no,,,
+Scale,Mettler Toledo,H-5275,electronic,$895.00,,,Mettler-Toledo™ BC60 Parcel Scale - 150 lbs x .05 lb,arrived,yes,medium,no,,,
+Thermocouple,Pyromation,GP02,electronic,$285.10,1,,"K-type, 16in long sheath, 1/4in diameter sheath, 1/2in screw connection, 4-20 mA output, 0-900C range",arrived,no,medium,no,,,
+"3/4"" to 1/2"" 316SS Union",Swagelok,SS-1210-6-8,piping,$41.10,6,,,arrived,1,short,no,,,
+"1/2"" to 3/8"" 316SS Union",Swagelok,SS-810-6-6,piping,$26.90,9,,,arrived,2,short,no,,,
+"1/2"" to 1/4"" 316SS Union",Swagelok,SS-810-6-4,piping,$27.00,9,,,arrived,2,short,no,,,
+"3/8"" to 1/4"" 316SS Union",Swagelok,SS-600-6-4,piping,$17.40,5,,,arrived,1,short,no,,,
+"1/2"" C-276 Union",Swagelok,HC-810-6,piping,$526.90,1,,,arrived,yes,long,no,,,
+"1/4"" 316SS Cross Union",Swagelok,SS-400-4,piping,$45.30,6,,,arrived,1,short,no,,,
+"1/2"" OD x 25"" L x 1/8"" T Ni-200 Tube",Magellan Metals,,piping,"$1,605.00",1,,,arrived,yes,long,no,,,
+"3/8"" OD x 23"" L x 1/16"" T Ni-200 Tube",Magellan Metals,,piping,$797.00,2,,,arrived,yes,long,no,,,
+"1/8"" OD x 4"" L x 1/32"" T Ni-200 Tube",Magellan Metals,,piping,$775.00,1,,,arrived,yes,long,no,,,
+"28"" L x 18"" W x 1/8"" T Ni-200 Plate",Magellan Metals,,vessel,$830.00,1,,,arrived,yes,medium,no,,,
+"8"" FOD x 16"" L 316SS Half Nipple",Kurt Lesker,,vessel,"$2,248.55",1,,"8""OAL, 10""CF FIXED FLANGE, 8""OD X .120"" WALL TUBING. OPEN END OF TUBE WILL BE UNCAPPED. FLANGE SIDE OF TUBING WILL BE BLANKED
+MATERIAL: 316LN SS FLANGE WITH TUBING/DISC FROM 316/316L SS
+FINISH: POLISHED TUBE. CAPPED END OF TUBE WILL BE EITHER DA FINISH OR BRUSH FINISH.",arrived,yes,long,yes & custom part,,,
+316SS Plate,McMaster Carr,,vessel,$114.70,1,,"8"" L x 8"" W x 1/4"" T",arrived,yes,short,no,,,
+Residual Gas Analyzer,Stanford Research Systems,,electronic,"$3,890.65",1,,RGA 100,arrived,yes,medium,no,,,
+Fire Brick,Lynn Manufacturing,K-23,heating,$9.33,12,,"9"" x 4.5"" x 2.5""",arrived,yes,short,no,,,
+Ceramic Fiber Blanket,Lynn Manufacturing,,heating,$24.90,1,,"25"" x 24"" x 0.5""",arrived,yes,short,no,,,
+C-276 Rupure Disk Housing,Alpha Process Sales,,vessel,"$1,896.00",3,,"1/2"" Swagelok Connection, 80 psi, 50C, 316SS outlet",arrived,yes,very long,yes & custom part,,,
+^ machining costs,BS&B Safety Systems,,vessel,"$1,300.00",1,,,,,very long,yes & custom part,,,
+Thermocouple,Parr Instruments,A472E5,electronic,$80.00,1,,"Thermocouple, type-J, 21-1/2” 1/8, T316",arrived,yes,short,no,,,
+Heating Tape,Brisk Heat,TBIH051-040-LSE,heating,$125.00,1,,"120 VAC, max temp 900°F, leads same ends, 2 ft",arrived,yes,medium,yes,,,
+PTFE Bottle,Lab Depot,314874,scrubber,$245.61,1,,500 mL,arrived,yes,medium,no,,,
+Hydrogen Generator,Peak Scientific,3301768,gas,"$23,623.20",1,,"Trace 1200cc, 100-230V, 8L bottle",arrived,yes,very long,no,,,
+"1/4"" 316SS Needle Valve",Swagelok,SS-1RS4,piping,$80.01,1,,,arrived,yes,short,no,,,
+"1/4"" 316SS Check Valve",Swagelok,SS-4C-KZ-1,piping,$98.91,3,,"Kynar Seals, 1 psi",arrived,yes,medium,no,,,
+Turbo Pump,Leybold,Turbovac 90i / DN 63 CF,vacuum,"$4,169.00",1,,"4.5"" CF flange inlet, KF16 outlet",arrived,yes,long,no,,,
+Turbo Pump Power Supply and Cables,Leybold,Turbo.power Integra,vacuum,$777.15,1,,,arrived,yes,long,no,,,
+"1/2"" 316SS Needle Valve",Swagelok,SS-6NBS8(-G),piping,$253.00,5,,2 have grafoil packing,arrived,yes,short,no,,,
+0.3 mm ID PTFE Tubing,Omnifit,,piping,$64.81,1,,"20m length, 1/16"" OD",arrived,yes,medium,no,,,
+"1/4"" Kynar Tubing",Ultra Pure Products,RFPVDF-.187-250,piping,$1.41,20,ft,,arrived,yes,medium,no,,,
+Oxygen Trap,VWR/Restek,20638,gas,$372.80,2,,"1/4"" swagelok connections",arrived,yes,medium,yes,,,
+"1/4"" to 1/16"" 316SS Union",Swagelok,SS-400-6-1FGC,piping,$38.22,2,,,arrived,yes,short,no,,,
+"4.5"" CF 304SS Blank Flange",Kurt Lesker,F0450X000N,vacuum,$59.05,1,,,arrived,yes,medium,no,,,
+KF16 Flexible Metal Hose,LDS Vacuum,NW16-MH48-VE,vacuum,$214.00,1,,"48"" length, Sealing Rings and clamps included",arrived,yes,medium,no +,,,
+"KF16 to 1/4"" Swagelok Adapter",LDS Vacuum,NW16x25SWG-VE,vacuum,$57.00,2,,Sealing Rings and clamps included,arrived,yes,medium,no +,,,
+KF25 to KF16 Union,LDS Vacuum,NW25x16-CR-VE,vacuum,$49.00,1,,Sealing Rings and clamps included,arrived,yes,medium,no +,,,
+"KF25 to 1/4"" Swagelok Adapter",LDS Vacuum,NW25x25SWG-VE,vacuum,$69.00,1,,Sealing Rings and clamps included,arrived,yes,medium,no +,,,
+"2.75"" CF 304SS Blank Flange",LDS Vacuum,275-000-VE,vacuum,$21.00,1,,"Nuts, bolts, and washers included",arrived,yes,medium,no +,,,
+"2.75"" CF to 1/4"" Swagelok Adapter",LDS Vacuum,275xSWG-25,vacuum,$69.00,1,,"Nuts, bolts, and washers included",arrived,yes,medium,no +,,,
+"4.5"" CF to 2.75"" CF Reducer",LDS Vacuum,450x275-150-0-T1,vacuum,$104.00,1,,"Nuts, bolts, and washers included",arrived,yes,medium,no +,,,
+"4.5"" CF to 2.75"" CF Reducing Cross",LDS Vacuum,450x275-RDX,vacuum,$300.00,1,,"Nuts, bolts, and washers included",arrived,yes,medium,no +,,,
+"KF16 to 1/2"" Swagelok Adapter",LDS Vacuum,NW16x50SWG-VE,vacuum,$73.00,2,,Sealing Rings and clamps included,arrived,yes,medium,no +,,,
+KF25 to KF16 Flexible Metal hose,LDS Vacuum,NW25x16-MH20-VE,vacuum,$162.00,1,,"20"" length, Sealing Rings and clamps included",arrived,no,medium,no +,,,
+Roughing Pump,A-VAC industries,Edwards RV5,vacuum,"$1,630.00",1,,"Rebuilt, 4.1 cfm, 1ph, 115/230V",arrived,yes,medium,no +,,,
+"1/4"" Compression to 3/8"" Male NPT PTFE Union",VWR/Ace Glass,12710-12,scrubber,$52.50,2,,,arrived,yes,long,no,,,
+"1/4"" 316SS Check Valve",Swagelok,SS-CHS4-1,piping,$61.40,3,,1 psi,arrived,no,short,no,,,
+"1/4"" Swagelok to 1/4"" Male NPT 316SS Union",Swagelok,SS-400-1-4,piping,$7.90,10,,,arrived,no,short,no,,,
+"1/4"" Swagelok 316SS Elbow Union",Swagelok,SS-400-9,piping,$17.70,10,,,arrived,yes,short,no,,,
+"1/4"" Swagelok 316SS Tee Union",Swagelok,SS-400-3,piping,$24.90,10,,,arrived,yes,short,no,,,
+"1/4"" 316SS Ball Valve",Swagelok,SS-42GS4,piping,$98.76,2,,"1 piece, 0.6 Cv",arrived,yes,,,,,
+"1/4"" 316SS Ball Valve",Swagelok,SS-43GS4,piping,$99.40,5,,"1 piece, 1.4 Cv",arrived,yes (get more),short,no,,,
+"1/4"" 316SS 3-way Ball Valve",Swagelok,SS-43GXS4,piping,$125.00,5,,"1 piece, 0.9 Cv",arrived,no,short,no,,,
+"1/2"" 316SS Ball Valve",Swagelok,SS-45S8,piping,$234.10,3,,"1 piece, 12 Cv",arrived,2,short,no,,,
+"1/2"" C-276 Needle Valve",Swagelok,HC-6NBS8-G-HC,piping,"$2,024.26",2,,Grafoil packing,arrived,yes,short,no,,,
+"1/4"" 316SS Tubing",Swagelok,SS-T4-S-035-20,piping,$3.12,60,ft,"in 6ft sections, 0.035"" wall thickness, 5100 psi",arrived,yes,short,no,,,
+"3/4"" Swagelok 316SS Union",Swagelok,SS-1210-6,piping,$42.20,5,,,arrived,no,short,no,,,
+C-276 Plate,Magellan Metals,,vessel,$315.00,2,,"0.25"" x 2.5"" x 6""",arrived,yes,medium,no,,,
+"1/4"" CS Tube",Earle M. Jorgensen Co,,piping,$6.25,40,ft,,arrived,no,medium,yes,,,
+Corrosive Gas Regulator,Matheson,,gas,"$2,201.24",1,,"Monel, Single Stage, 1-50 psi, 660 CGA",arrived,yes,long,yes,,,
+KF16 Ball Valve,Kurt Lesker,BVB0075MVQF,vacuum,$345.00,1,,,arrived,yes,long,no,,,
+Ion Pressure Gauge,Kurt Lesker,KJLC354401YF,electronic,"$1,308.00",1,,"2.75"" CF connection",arrived,yes,medium,no,,,
+I/O Controller ,National Instruments,781441-01,electronic,"$2,745.90",1,,"NI USB-6353, X Series DAQ (32 AI, 48 DIO, 4 AO) & Power Cord, AC, U.S., 120 VAC, 2.3 meters",ordered,yes,very long,Custom part,,,
+"1/4"" to 1/8"" 316SS Union",Swagelok,SS-400-6-2,piping,$14.18,1,,for connecting up the hydrogen generator,arrived,yes,short,no,,,
+Heating Tape w/ Controller,Brisk Heat,HSTAT051004,heating,$199.56,1,,"4 ft long, 0.5 in wide, 120 V, 144 Watt, 10-218° C",arrived,yes,short,no,,,
+Ceramic Fiber Insulation,Unitherm,CF8-5-24x60in,heating,$40.53,1,,"5 ft long, 2 ft wide, 0.5 in thick",arrived,no,short,no,,,
+"1/4"" Female NPT to Swagelok Monel adapter",Swagelok,M-400-7-4,piping,$44.35,1,,,ordered,yes,short,no,,,

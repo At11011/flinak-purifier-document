@@ -1,3 +1,14 @@
+name = "calculations"
+uuid = "a5260c5f-978e-4c12-b362-c8744be0e45c"
+version = "0.1.0"
+authors = ["Nathaniel Thomas <nathaniel@swbell.net>"]
+
 [deps]
+PhysicalConstants = "5ad8b20f-a522-5ce9-bfc9-ddf1d5bda6ab"
+Revise = "295af30f-e4ad-537b-8983-00126c2a3abe"
 Unitful = "1986cc42-f94f-5a68-af5c-568840ba703d"
-UnitfulUS = "7dc9378f-8956-57ef-a780-aa31cc70ff3d"
+
+[compat]
+PhysicalConstants = "0.2.4"
+Revise = "3.14.0"
+Unitful = "1.28.0"

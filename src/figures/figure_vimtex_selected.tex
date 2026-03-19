@@ -1,0 +1,24 @@
+\documentclass{standalone}
+\usepackage{graphicx}
+\usepackage{tikz}
+
+\begin{document}
+
+\begin{tikzpicture}
+  % Place image as a node
+  \node[anchor=south west, inner sep=0] (img) at (0,0)
+  {\includegraphics[width=10cm]{your_image.png}};
+
+  % Define coordinate system relative to image
+  \begin{scope}[x={(img.south east)}, y={(img.north west)}]
+
+    % Example annotations (coordinates are now 0–1 normalized)
+    \draw[->, red, thick] (0.2,0.3) -- (0.4,0.5)
+    node[midway, above] {Arrow};
+
+    \node[blue] at (0.7,0.8) {Label};
+
+  \end{scope}
+\end{tikzpicture}
+
+\end{document}

@@ -1,5 +1,5 @@
 % =============================================================================
-% Title:        Chamber Base
+% Title:        Reaction Chamber
 % Author:       Nathaniel Thomas
 % Affiliation:  Texas A&M University, Department of Nuclear Engineering
 % Email:        nathaniel@tamu.edu
@@ -12,4 +12,41 @@
 %
 % =============================================================================
 
-% TODO: Outline chamber overall construction
+\section{Reaction Chamber}
+
+This section describes the reaction chamber of the FLiNaK purifier.
+The reaction chamber is where the FLiNaK purification takes place.
+It is constructed out of Hastelloy C-276, which has excellent
+corrosion resistance properties. \cite{c276-resistance}
+It consists of a CF flanged lid with 5 \SI{0.5}{in} tubes,
+% TODO: Confirm dimensions here
+1 \SI{0.75}{in} tube, and a \SI{1}{in} tube topped with a \SI{2.75}{in}
+OD CF flange.
+\par
+
+% TODO: Add a picture
+\begin{figure}
+  \centering
+  % \includegraphics[width=0.6\textwidth]{./assets/pictures/}
+  \caption{Image of the reaction chamber assembly.}
+  \label{fig: reaction chamber assembly}
+\end{figure}
+
+The purposes of each of the ports is as follows:
+
+\begin{enumerate}
+  \item \SI{0.5}{in} gas bubbler dip tube port
+  \item \SI{0.5}{in} scrubber line port
+  \item \SI{0.5}{in} pressure gauge port (unused in current design, capped)
+  \item \SI{0.5}{in} vacuum port (originally thermocouple well)
+  \item \SI{0.5}{in} burst disk port
+  \item \SI{0.75}{in} salt transfer dip tube port
+  \item \SI{1}{in} salt introduction port
+\end{enumerate}
+
+Inside of the reaction chamber is a nickel 201 liner. This liner is
+designed to hold molten salt during purification. Ni-201 is chosen due to its
+excellent corrosion resistance, as described in \Cref{sec: ni alloys}.
+Because it is a liner, there is little need for it to be made of a
+material with greater structural integrity, as secondary containment
+is already present in the form of the C276 reaction chamber. \par
